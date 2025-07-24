@@ -7,20 +7,3 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888889;
-  border-radius: 5px; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #ee680f;
-}

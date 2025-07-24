@@ -1,4 +1,4 @@
-.skyline-container {
+.page1-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
     height: 100vh;
@@ -9,7 +9,7 @@
     font-size: 1.2rem;
 }
 
-.skyline-content {
+.page1-skyline-content {
     display: flex;
     width: 100%;
     height: 100%;
@@ -17,7 +17,7 @@
     box-sizing: border-box;
 }
 
-.skyline-left {
+.page1-skyline-left {
     flex: 4;
     padding-right: 20px;
     padding-bottom: 100px;
@@ -27,42 +27,49 @@
     z-index: 10;
 }
 
-.skyline-logo img {
+.page1-skyline-logo img {
     width: 80%;
     margin-bottom: 30px;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
 }
 
-.skyline-description p {
+.page1-skyline-description p {
     margin-left: 80px;
     line-height: 1.6;
     color: #333;
 }
 
-.highlight {
+.page1-highlight {
     font-weight: 900;
     color: #000;
     margin-top: 30px;
 }
 
-.skyline-right {
+.page1-skyline-right {
+    position: relative;
     flex: 3;
     display: flex;
     justify-content: end;
     align-items: center;
     z-index: 10;
-    opacity: 0.8;
 }
 
-.soldier-image {
+.page1-soldier-image {
     width: 100%;
     max-width: 400px;
     height: auto;
     object-fit: contain;
     margin-right: 80px;
     z-index: 10;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    opacity: 0.8 !important;
 }
 
-.skyline-background {
+.page1-skyline-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -71,10 +78,150 @@
     z-index: 1;
 }
 
-.verified {
+.page1-verified {
     position: absolute;
-    top: 400px;
-    right: 400px;
+    top: 380px;
+    right: 300px;
     width: 350px;
     z-index: 20;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+@media (max-width: 1440px) {
+    .page1-skyline-content {
+        padding: 40px;
+    }
+
+    .page1-skyline-description p {
+        margin-left: 40px;
+    }
+
+    .page1-skyline-logo img {
+        width: 70%;
+        margin-bottom: 0px;
+    }
+
+    .page1-soldier-image {
+        margin-right: 40px;
+        max-width: 350px;
+    }
+
+    .page1-verified {
+        top: 350px;
+        right: 250px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page1-verified[data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .page1-skyline-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .page1-skyline-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .page1-skyline-left,
+    .page1-skyline-right {
+        flex: unset;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page1-skyline-background {
+        display: none;
+    }
+
+    .page1-skyline-description p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .page1-soldier-image {
+        margin: 0 auto 30px auto;
+        max-width: 300px;
+    }
+
+    .page1-verified {
+        right: 55%;
+        top: 300px;
+        transform: translateX(150px);
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page1-skyline-content {
+        padding: 15px;
+    }
+
+    .page1-skyline-logo img {
+        width: 80%;
+        margin-bottom: 0px;
+    }
+
+    .page1-soldier-image {
+        max-width: 280px;
+    }
+
+    .page1-verified {
+        right: 55%;
+        top: 300px;
+        transform: translateX(150px);
+        width: 220px;
+    }
+}
+
+@media (max-width: 425px) {
+    .page1-highlight[data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .page1-skyline-container {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .page1-skyline-content {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .page1-skyline-logo img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .page1-skyline-description p {
+        margin-left: 0;
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .page1-soldier-image {
+        display: none;
+    }
+
+    .page1-verified {
+        right: 25%;
+        top: 10px;
+        transform: translateX(150px);
+        width: 220px;
+        display: flex;
+        justify-content: center;
+    }
 }
