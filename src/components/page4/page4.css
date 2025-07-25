@@ -28,15 +28,102 @@
 }
 
 .page4-left-side {
-
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
 }
 
 .page4-left-side-header {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    margin-top: 40px;
+    margin-left: 40px;
     margin-bottom: 20px;
 }
 
 .page4-left-side-drone {
     font-size: 5.5rem;
     margin-bottom: 10px;
+}
+
+.page4-left-side-img {
+    position: absolute;
+    width: 1000px;
+    right: 80px;
+    top: 50px;
+    z-index: 10;
+}
+
+.page4-left-side-features-list {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.page4-left-side-features-items {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.page4-left-side-feature-item {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+
+.page4-right-side {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+}
+
+.page4-right-side-logo {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.page4-drone-card {
+    background: #d8d8d8;
+    padding: 30px 60px;
+    width: 320px;
+    color: #000;
+    position: relative;
+}
+
+.page4-drone-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.page4-drone-subtitle {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.page4-drone-description {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.page4-drone-accent-line {
+    margin-top: 20px;
+    height: 8px;
+    background: repeating-linear-gradient(45deg,
+            #f60,
+            #f60 10px,
+            transparent 10px,
+            transparent 20px);
 }

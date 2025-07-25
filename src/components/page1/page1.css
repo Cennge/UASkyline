@@ -116,6 +116,10 @@
 }
 
 @media (max-width: 1024px) {
+    .page1-skyline-container {
+        height: auto;
+    }
+
     .page1-verified[data-aos] {
         opacity: 1 !important;
         transform: none !important;
