@@ -10,9 +10,10 @@ export function Page2() {
                 data-aos="fade-up"
                 data-aos-duration="500"
             />
-            <div className="page2-image-background">
+            {/* <div className="page2-image-background">
                 <img src="./public/backgrounds/background2slide.jpg" alt="Background" />
-                </div>
+                </div> */}
+            <img className="page2-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" />
 
             <div className="page2-columns">
                 <div className="page2-column">
@@ -53,7 +54,7 @@ export function Page2() {
                         <img src="./public/icons/8.png" alt="icon" />
                         <p>Жодного «допилювання» — лише результат</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>

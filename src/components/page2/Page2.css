@@ -1,29 +1,32 @@
 .page2-skyline-container {
-    position: relative;
-    padding: 80px 40px;
     font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
 }
 
 .page2-skyline-background {
     position: absolute;
-    margin-top: 20px;
-    top: 0;
+    top: 10;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-    object-fit: cover;
-    opacity: 0.15;
-    user-select: none;
-    pointer-events: none;
 }
-.page2-image-background {
-    position: absolute;
-    max-width: 1px;
-    transform: translate(-50%, -50%);
-    opacity: 0.5;
-    z-index: 2;
+
+.page2-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    box-sizing: border-box;
 }
+
 .page2-columns {
     display: flex;
     justify-content: center;
@@ -71,6 +74,94 @@
     font-size: 24px;
     line-height: 1.5;
     font-weight: 600;
+}
+
+.page2-madeinua-icon {
+    position: absolute;
+    left: 40px;      
+    bottom: 50px;   
+    height: 50px;
+    z-index: 10;
+}
+/* ---------- Адаптив для планшетов (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+    .page2-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 40px;
+    }
+     .page2-skyline-background {
+        display: none;
+    }
+
+    .page2-column {
+        max-width: 100%;
+    }
+
+    .page2-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .page2-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 15px 20px;
+    }
+
+    .page2-item img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .page2-item p {
+        font-size: 20px;
+    }
+
+    .page2-skyline-content {
+        padding: 40px;
+    }
+}
+
+/* ---------- Адаптив для телефонов (max-width: 600px) ---------- */
+@media (max-width: 600px) {
+    .page2-columns {
+        gap: 30px;
+    }
+
+    .page2-title {
+        font-size: 28px;
+    }
+
+    .page2-item {
+        gap: 15px;
+        padding: 12px 15px;
+    }
+
+    .page2-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .page2-item p {
+        font-size: 18px;
+    }
+
+    .page2-skyline-content {
+        padding: 20px;
+    }
+
+    .page2-madeinua-icon {
+        left: 20px;
+        bottom: 20px;
+        height: 35px;
+    }
+
+    .corner-left,
+    .corner-right {
+        width: 40px !important;
+    }
 }
 
 
