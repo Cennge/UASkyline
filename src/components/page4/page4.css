@@ -1,0 +1,42 @@
+.page4-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.page4-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.page4-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.page4-left-side {
+
+}
+
+.page4-left-side-header {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.page4-left-side-drone {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+}
