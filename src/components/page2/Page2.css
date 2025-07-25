@@ -1,0 +1,77 @@
+.page2-skyline-container {
+    position: relative;
+    padding: 80px 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page2-skyline-background {
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    opacity: 0.15;
+    user-select: none;
+    pointer-events: none;
+}
+.page2-image-background {
+    position: absolute;
+    max-width: 1px;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 2;
+}
+.page2-columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    z-index: 2;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.page2-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.page2-title {
+    font-family: "USSRStencil", sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.page2-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(0, 0, 0);
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.page2-item img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.page2-item p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+
+

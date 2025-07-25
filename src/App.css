@@ -1,3 +1,9 @@
 .main-components {
     background-color: #bbbbbc;
 }
+@font-face {
+  font-family: 'USSRStencil';
+  src: url('./fonts/ussr-stencil.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
