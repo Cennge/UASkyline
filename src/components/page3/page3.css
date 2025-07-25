@@ -1,0 +1,187 @@
+.page3-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.page3-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page3-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.page3-columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    z-index: 2;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.page3-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.page3-title {
+    font-family: "USSRStencil", sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.page3-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(0, 0, 0);
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+
+.page3-item img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.page3-item p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.page3-madeinua-icon {
+    position: absolute;
+    left: 40px;      
+    bottom: 50px;   
+    height: 50px;
+    z-index: 10;
+}
+.page3-bottom-image {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 180px;
+    height: auto;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .page3-columns {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 0 40px;
+    }
+     .page3-skyline-background {
+        display: none;
+    }
+
+    .page3-column {
+        max-width: 100%;
+    }
+
+    .page3-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .page3-item {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 15px 20px;
+    }
+
+    .page3-item img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .page3-item p {
+        font-size: 20px;
+    }
+
+    .page3-skyline-content {
+        padding: 40px;
+    }
+    .page3-madeinua-icon {
+        left: 20px;
+        bottom: 8px;
+        height: 40px;
+    }
+    .page3-bottom-image {
+        right: 20px;
+        bottom: 20px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page3-columns {
+        gap: 30px;
+    }
+
+    .page3-title {
+        font-size: 28px;
+    }
+
+    .page3-item {
+        gap: 15px;
+        padding: 12px 15px;
+    }
+
+    .page3-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .page3-item p {
+        font-size: 18px;
+    }
+
+    .page3-skyline-content {
+        padding: 20px;
+    }
+
+    .page3-madeinua-icon {
+        left: 10px;
+        bottom: 10px;
+        height: 25px;
+    }
+
+    .corner-left,
+    .corner-right {
+        width: 40px !important;
+    }
+    .page3-bottom-image {
+        right: 10px;
+        bottom: 10px;
+        width: 100px;
+    }
+}
