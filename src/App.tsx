@@ -1,6 +1,7 @@
 import './App.css'
 import { Page1 } from './components/page1/page1'
 import { Page2 } from './components/page2/page2'
+import { Page3 } from './components/page3/page3'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -18,6 +19,7 @@ function App() {
       <div className='main-components'>
         <Page1 />
         <Page2 />
+        <Page3 />
       </div>
     </>
   )

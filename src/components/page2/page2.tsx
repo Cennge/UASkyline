@@ -14,6 +14,7 @@ export function Page2() {
                 <img src="./public/backgrounds/background2slide.jpg" alt="Background" />
                 </div> */}
             <img className="page2-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" />
+            <img className="page2-bottom-image" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className="page2-columns">
                 <div className="page2-column">
