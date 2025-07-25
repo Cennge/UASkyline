@@ -1,4 +1,4 @@
-.page4  -skyline-container {
+.page4-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
     height: 100vh;
@@ -25,4 +25,18 @@
     height: 100%;
     padding: 80px;
     box-sizing: border-box;
+}
+
+.page4-left-side {
+
+}
+
+.page4-left-side-header {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.page4-left-side-drone {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
 }

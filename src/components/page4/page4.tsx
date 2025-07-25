@@ -11,10 +11,15 @@ export function Page4() {
                 data-aos-duration="500"
             />
             <div className="page4-skyline-content">
-                <h1 data-aos="fade-up" data-aos-duration="500">UASKYLINE</h1>
-                <p data-aos="fade-up" data-aos-duration="500">
-                    A platform for students to ask questions and get answers from their peers.
-                </p>
+                <div className='page4-left-side'>
+                    <div className='page4-left-side-header'>
+                        <h2 className='page4-left-side-name'>БЕЗПІЛОТНИЙ АВІАЦІЙНИЙ КОМПЛЕКС</h2>
+                        <h1 className='page4-left-side-drone'>SKIF-10</h1>
+                    </div>
+                </div>
+
+                <div className='page4-right-side'>
+                </div>
             </div>
         </div>
     );
