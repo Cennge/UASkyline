@@ -78,11 +78,12 @@
 
 .page3-madeinua-icon {
     position: absolute;
-    left: 40px;      
-    bottom: 50px;   
+    left: 40px;
+    bottom: 50px;
     height: 50px;
     z-index: 10;
 }
+
 .page3-bottom-image {
     position: absolute;
     right: 80px;
@@ -93,13 +94,18 @@
 }
 
 @media (max-width: 1024px) {
+    .page3-skyline-container {
+        height: auto;
+    }
+
     .page3-columns {
         flex-direction: column;
         align-items: center;
         gap: 40px;
         padding: 0 40px;
     }
-     .page3-skyline-background {
+
+    .page3-skyline-background {
         display: none;
     }
 
@@ -130,11 +136,13 @@
     .page3-skyline-content {
         padding: 40px;
     }
+
     .page3-madeinua-icon {
         left: 20px;
         bottom: 8px;
         height: 40px;
     }
+
     .page3-bottom-image {
         right: 20px;
         bottom: 20px;
@@ -179,6 +187,7 @@
     .corner-right {
         width: 40px !important;
     }
+
     .page3-bottom-image {
         right: 10px;
         bottom: 10px;
