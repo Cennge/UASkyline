@@ -1,0 +1,80 @@
+.contacts-container {
+  display: flex;
+  left: 300px;
+  position: relative;
+  min-height: 100vh;
+  background: #bbbbbc;
+  font-family: "Montserrat", sans-serif;
+}
+.contacts-content {
+  margin-left: 60px; 
+}
+
+.contacts-left {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.contacts-logo img {
+  width: 500px;
+  margin-bottom: 40px;
+  display: block;
+  margin-left: 0;
+}
+
+.contacts-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  margin-left: 0;
+}
+
+.contacts-item .icon {
+  margin-right: 15px;
+  font-size: 1.8rem;
+}
+
+.contacts-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.qr-codes {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  margin-left: 0; 
+}
+
+.qr-item {
+  text-align: center;
+}
+
+.qr-item img {
+  width: 256px;
+  height: 256px;
+  margin-bottom: 10px;
+}
+
+.qr-item p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contacts-right {
+  flex: 1;
+  background: #bbbbbc; 
+}
