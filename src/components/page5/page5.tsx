@@ -80,7 +80,7 @@ export function Page5() {
 
                 <div className='page5-right-side' data-aos="fade-left" data-aos-duration="1000">
                     <div className="page5-banner" data-aos="zoom-in" data-aos-delay="200">
-                        FPV КАМИКАДЗЕ
+                        FPV КАМІКАДЗЕ
                     </div>
 
                     <img

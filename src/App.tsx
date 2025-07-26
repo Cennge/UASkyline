@@ -5,8 +5,8 @@ import { Page2 } from './components/page2/page2'
 import { Page3 } from './components/page3/page3'
 import { Page4 } from './components/page4/page4'
 import { Page5 } from './components/page5/page5'
-
 import { Page7 } from './components/page-7/page7';
+import { Page15 } from './components/page15/page15';
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -26,10 +26,13 @@ function App() {
         <div className='app-page2'>
           <Page2 />
         </div>
+        <div className='app-page3'>
         <Page3 />
+        </div>
         <Page4 />
         <Page5 />
         <Page7 />
+        <Page15 />
         <Page16 />
       </div>
     </>

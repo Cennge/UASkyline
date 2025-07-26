@@ -1,0 +1,102 @@
+import './page15.css';
+
+export function Page15() {
+    const data = [
+        { parameter: "Напруга стабілізована (В)", value: "28 / 28" },
+        { parameter: "Струм (А, до…)", value: "35 / 35-40" },
+        { parameter: "Місткість (мА/Год)", value: "63000 / 65000" },
+        { parameter: "Потужність (Вт/Час)", value: "1420 / 2260" },
+        { parameter: "Потужність до ваги (Вт/Час/Кг)", value: "190 / 255" },
+        { parameter: "Заряд від мережі 220В (Вт)", value: "500 / 1000" },
+        { parameter: "Заряд від бортової мережі 12-24В (А)", value: "30 / 40" },
+        { parameter: "*BMS BlueTooth управління", value: "Так" },
+        { parameter: "Розмір (Д/Ш/В мм)", value: "140 / 175 / 500" },
+        { parameter: "Вага (Кг)", value: "13 / 15" },
+    ];
+
+    const комплект = [
+        { parameter: "Блок живлення від ~220В", value: "25В/15А, 42В/15А" },
+        { parameter: "Кабель зарядки від бортової мережі", value: "5, 6" },
+        { parameter: "Пульт дистанційного увімкнення/вимкнення батареї з індикацією стану роботи батареї (М)", value: "15, 20" }
+    ];
+
+    return (
+        <div className="page5-skyline-container">
+            <img
+                src="./public/img/frame.png"
+                alt="Frame Background"
+                className="page5-skyline-background"
+                data-aos="fade-up"
+                data-aos-duration="500"
+            />
+
+            <img className="page5-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
+            <img className="page5-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
+
+            <div className='page5-skyline-content'>
+                {/* Левая часть */}
+                <div className="page5-left-side" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 className='page5-left-side-drone'
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        data-aos-delay="200">
+                        АКБ ДЛЯ РЕБ
+                    </h1>
+                    <div className='page5-left-side-subtext' data-aos="fade-left" data-aos-delay="300">
+                        Компактні розміри пристрою та спеціальні ремені в комплекті забезпечують зручне перенесення
+                        акумулятора на плечі або за спиною, що підвищує маневреність. Завдяки повному комплекту кабелів і
+                        проводів, акумулятор можна заряджати від різних джерел — мережі, автомобіля або генератора.
+                    </div>
+                    {/* Таблица характеристик */}
+                    <div className="page5-table-container" data-aos="fade-up" data-aos-delay="400">
+                        <table className="page5-table">
+                            <tbody>
+                                {data.map((row, index) => (
+                                    <tr key={index} className="page5-tr" data-aos="fade-up" data-aos-delay={500 + index * 50}>
+                                        <td className="page5-td page5-td-first">{row.parameter}</td>
+                                        <td className="page5-td page5-td-last">{row.value}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {/* Таблица комплектации */}
+                    <div className="page5-table-container" style={{ marginTop: 20 }} data-aos="fade-up" data-aos-delay="1000">
+                        <table className="page5-table-bottom">
+                            <thead>
+                                <tr>
+                                    <th className="page5-td page5-td-first">Комплектація</th>
+                                    <th className="page5-td page5-td-last">Опис</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {комплект.map((row, index) => (
+                                    <tr key={index} className="page5-tr" data-aos="fade-up" data-aos-delay={1100 + index * 50}>
+                                        <td className="page5-td page5-td-first">{row.parameter}</td>
+                                        <td className="page5-td page5-td-last">{row.value}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                {/* Правая часть */}
+                <div className='page5-right-side' data-aos="fade-left" data-aos-duration="1000">
+                    <div className="page5-banner" data-aos="zoom-in" data-aos-delay="200">
+                        7S1P (LIFEPO4) | 10S1P (LI-NMC)
+                    </div>
+
+                    <img
+                        src="./public/drones/REB_BATTERY.png"
+                        alt="Battery"
+                        className='page5-right-side-img'
+                        data-aos="zoom-in"
+                        data-aos-duration="800"
+                        data-aos-delay="400" />
+                </div>
+            </div>
+        </div>
+    );
+}
