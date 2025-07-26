@@ -45,6 +45,8 @@
 .page4-left-side-drone {
     font-size: 5.5rem;
     margin-bottom: 10px;
+    font-family: "USSRStencil", sans-serif;
+    font-weight: 200;
 }
 
 .page4-left-side-img {
@@ -203,6 +205,118 @@
     }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .page4-skyline-container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
 
-@media (max-width: 425px) {}
+    .page4-skyline-content {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .page4-left-side {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page4-left-side-img {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        right: 0;
+        top: 0;
+        margin: 0 auto 20px auto;
+    }
+
+    .page4-left-side-features-list {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .page4-left-side-features-items {
+        margin-bottom: 40px;
+    }
+
+    .page4-right-side {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page4-right-side-logo {
+        width: 250px;
+        margin: 20px auto;
+    }
+
+    .page4-drone-card {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .page4-drone-title {
+        font-size: 2rem;
+    }
+
+    .page4-drone-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .page4-drone-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .page4-skyline-content {
+        padding: 20px 10px;
+    }
+
+    .page4-left-side-header {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .page4-left-side-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page4-left-side-features-list {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+
+    .page4-left-side-feature-item {
+        margin-left: 15px;
+        font-size: 0.9rem;
+    }
+
+    .page4-right-side-logo {
+        width: 200px;
+        margin: 10px auto;
+    }
+
+    .page4-drone-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .page4-drone-title {
+        font-size: 1.6rem;
+    }
+
+    .page4-drone-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .page4-drone-description {
+        font-size: 1rem;
+    }
+}

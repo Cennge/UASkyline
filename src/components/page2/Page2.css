@@ -12,7 +12,7 @@
 
 .page2-skyline-background {
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -78,11 +78,12 @@
 
 .page2-madeinua-icon {
     position: absolute;
-    left: 40px;      
-    bottom: 50px;   
+    left: 40px;
+    bottom: 50px;
     height: 50px;
     z-index: 10;
 }
+
 .page2-bottom-image {
     position: absolute;
     right: 80px;
@@ -92,45 +93,57 @@
     z-index: 10;
 }
 
+@media (max-width: 1440px) {
+    .page2-skyline-content {
+        padding: 60px;
+    }
+    .page2-columns {
+        gap: 60px;
+    }
+    .page2-title {
+        font-size: 42px;
+    }
+    .page2-item img {
+        width: 75px;
+        height: 75px;
+    }
+    .page2-item p {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 1024px) {
-    .page2-skyline-container{
+    .page2-skyline-container {
         height: auto;
     }
     .page2-columns {
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 50px;
         padding: 0 40px;
     }
-    
     .page2-skyline-background {
         display: none;
     }
-
     .page2-column {
         max-width: 100%;
     }
-
     .page2-title {
         font-size: 36px;
         text-align: center;
     }
-
     .page2-item {
         flex-direction: row;
         justify-content: flex-start;
         padding: 15px 20px;
     }
-
     .page2-item img {
         width: 65px;
         height: 65px;
     }
-
     .page2-item p {
         font-size: 20px;
     }
-
     .page2-skyline-content {
         padding: 40px;
     }
@@ -139,56 +152,75 @@
         bottom: 8px;
         height: 40px;
     }
-    .page3-bottom-image {
+    .page2-bottom-image {
         right: 20px;
         bottom: 20px;
         width: 140px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .page2-columns {
-        gap: 30px;
+        gap: 40px;
     }
-
     .page2-title {
-        font-size: 28px;
+        font-size: 30px;
     }
-
     .page2-item {
         gap: 15px;
         padding: 12px 15px;
     }
-
     .page2-item img {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
-
     .page2-item p {
         font-size: 18px;
     }
-
     .page2-skyline-content {
-        padding: 20px;
+        padding: 25px;
     }
-
     .page2-madeinua-icon {
-        left: 10px;
+        left: 15px;
         bottom: 10px;
-        height: 25px;
+        height: 30px;
     }
-
-    .corner-left,
-    .corner-right {
-        width: 40px !important;
-    }
-    .page3-bottom-image {
-        right: 10px;
-        bottom: 10px;
-        width: 100px;
+    .page2-bottom-image {
+        right: 15px;
+        bottom: 15px;
+        width: 110px;
     }
 }
 
-
-
+@media (max-width: 425px) {
+    .page2-columns {
+        gap: 25px;
+    }
+    .page2-title {
+        font-size: 24px;
+    }
+    .page2-item {
+        gap: 12px;
+        padding: 10px 12px;
+    }
+    .page2-item img {
+        width: 45px;
+        height: 45px;
+    }
+    .page2-item p {
+        font-size: 16px;
+    }
+    .page2-skyline-content {
+        padding: 15px;
+    }
+    .page2-madeinua-icon {
+        left: 8px;
+        bottom: 8px;
+        height: 22px;
+    }
+    .page2-bottom-image {
+        right: 8px;
+        bottom: 8px;
+        width: 90px;
+    }
+}
