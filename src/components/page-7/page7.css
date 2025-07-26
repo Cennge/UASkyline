@@ -1,0 +1,371 @@
+.page7-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+    position: relative;
+}
+
+.page7-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page7-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.page7-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    box-sizing: border-box;
+}
+
+.page7-left-side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+}
+
+.page7-left-side-header {
+    font-size: 1.1rem;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.page7-left-side-drone {
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+    font-family: "USSRStencil", sans-serif;
+    font-weight: 200;
+}
+
+.page7-left-side-img {
+    position: absolute;
+    width: 900px;
+    right: 20px;
+    top: 0;
+    z-index: 10;
+}
+
+.page7-left-side-features-list {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.page7-left-side-features-items {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.page7-left-side-feature-item {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+
+.page7-right-side {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+}
+
+.page7-right-side-logo {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+
+.page7-drone-card {
+    background: #d8d8d8;
+    padding: 30px 60px;
+    width: 320px;
+    color: #000;
+    position: relative;
+}
+
+.page7-drone-title {
+    font-weight: 700;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+.page7-drone-subtitle {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.page7-drone-description {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.page7-drone-accent-line {
+    margin-top: 20px;
+    height: 8px;
+    background: repeating-linear-gradient(45deg,
+            #f60,
+            #f60 10px,
+            transparent 10px,
+            transparent 20px);
+}
+
+.page7-right-side-header {
+    display: block;
+}
+
+.page7-imagedrone-frame {
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    right: 630px;
+    z-index: 20;
+}
+
+@media (max-width: 1440px) {
+    .page7-drone-card{
+        scale: 0.85;
+    }
+    .page7-imagedrone-frame {
+        width: 300px;
+        right: 450px;
+    }
+
+    .page7-left-side-img {
+        position: absolute;
+        width: 800px;
+        right: -100px;
+        top: -20px;
+    }
+
+    .page7-left-side-header {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .page7-left-side-features-list {
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .page7-left-side-features-items {
+        list-style-type: disc;
+        padding-left: 0px;
+        margin-bottom: 100px;
+    }
+
+    .page7-right-side-logo {
+        width: 350px;
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page7-imagedrone-frame {
+        display: none;
+    }
+
+    .page7-right-side-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .page7-skyline-content {
+        height: 105%;
+    }
+
+    .page7-right-side-logo {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .page7-left-side-img {
+        position: absolute;
+        width: 600px;
+        right: 0;
+        top: 100px;
+    }
+
+    .page7-left-side-features-items {
+        padding-top: 20px;
+    }
+
+    .page7-skyline-background {
+        display: none;
+    }
+
+    .page7-right-side {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        width: 40%;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page7-drone-card {
+        scale: 0.85;
+    }
+}
+
+@media (max-width: 768px) {
+    .page7-madeinua-icon {
+        left: 10px;
+        bottom: 0;
+        height: 40px;
+    }
+
+    .page7-skyline-container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .page7-skyline-content {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .page7-left-side {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page7-left-side-img {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        right: 0;
+        top: 0;
+        margin: 0 auto 20px auto;
+    }
+
+    .page7-left-side-features-list {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .page7-left-side-features-items {
+        margin-bottom: 40px;
+    }
+
+    .page7-right-side {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .page7-right-side-logo {
+        width: 350px;
+        margin: 20px auto;
+    }
+
+    .page7-drone-card {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+        scale: 1;
+    }
+
+    .page7-drone-title {
+        font-size: 2rem;
+    }
+
+    .page7-drone-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .page7-drone-description {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .page7-skyline-content {
+        padding: 20px 10px;
+    }
+
+    .page7-left-side-header {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .page7-left-side-img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .page7-left-side-features-list {
+        font-size: 0.9rem;
+        padding: 0 5px;
+    }
+
+    .page7-left-side-feature-item {
+        margin-left: 15px;
+        font-size: 0.9rem;
+    }
+
+    .page7-right-side-logo {
+        width: 300px;
+        margin: 10px auto;
+    }
+
+    .page7-drone-card {
+        width: 100%;
+        padding: 15px;
+        scale: 1;
+    }
+
+    .page7-drone-title {
+        font-size: 1.6rem;
+    }
+
+    .page7-drone-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .page7-drone-description {
+        font-size: 1rem;
+    }
+}
