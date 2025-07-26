@@ -1,9 +1,29 @@
 .main-components {
-    background-color: #bbbbbc;
+  background-color: #bbbbbc;
 }
+
 @font-face {
   font-family: 'USSRStencil';
   src: url('./fonts/ussr-stencil.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+.app-page2 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./backgrounds/background2slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }

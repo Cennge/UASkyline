@@ -22,11 +22,13 @@ function App() {
     <>
       <div className='main-components'>
         <Page1 />
-        <Page2 />
+        <div className='app-page2'>
+          <Page2 />
+        </div>
         <Page3 />
         <Page4 />
         <Page5 />
-        <Page16/>
+        <Page16 />
       </div>
     </>
   )
