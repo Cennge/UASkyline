@@ -12,30 +12,9 @@
 
 .page5-skyline-background {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-
-.page5-skyline-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding: 80px;
-    box-sizing: border-box;
-}
-
-.page5-left-side-header {
-    font-size: 1.1rem;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-}
-
-.page5-left-side-drone {
-    font-size: 5.5rem;
-    margin-bottom: 10px;
-    font-family: "USSRStencil", sans-serif;
 }

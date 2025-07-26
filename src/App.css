@@ -1,5 +1,6 @@
 .main-components {
   background-color: #bbbbbc;
+  overflow: hidden;
 }
 
 @font-face {

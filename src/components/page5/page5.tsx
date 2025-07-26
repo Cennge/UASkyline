@@ -10,11 +10,6 @@ export function Page5() {
                 data-aos="fade-up"
                 data-aos-duration="500"
             />
-            <div className='page5-skyline-content'>
-                <div className='page5-left-side-drone'>
-                    <p>SKIF-10D</p>
-                </div>
-            </div>
 
 
         </div>
