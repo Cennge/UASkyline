@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    
+    position: relative;
 }
 
 .page4-skyline-background {
@@ -18,6 +20,13 @@
     z-index: 1;
 }
 
+.page4-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
 
 .page4-skyline-content {
     display: flex;
@@ -234,6 +243,12 @@
 }
 
 @media (max-width: 768px) {
+    .page4-madeinua-icon {
+        left: 10px;
+        bottom: 0;
+        height: 40px;
+    }
+
     .page4-skyline-container {
         height: auto;
         flex-direction: column;

@@ -11,6 +11,9 @@ export function Page4() {
                 data-aos-duration="800"
                 data-aos-delay="100"
             />
+            
+            <img className="page4-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" />
+            
             <div className="page4-skyline-content">
                 <div className='page4-left-side'>
                     <div className='page4-left-side-header'>
