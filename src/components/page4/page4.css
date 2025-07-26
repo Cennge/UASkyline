@@ -130,7 +130,24 @@
             transparent 20px);
 }
 
+.page4-right-side-header {
+    display: block;
+}
+
+.page4-imagedrone-frame {
+    position: absolute;
+    width: 350px;
+    bottom: 0;
+    right: 630px;
+    z-index: 20;
+}
+
 @media (max-width: 1440px) {
+    .page4-imagedrone-frame {
+        width: 300px;
+        right: 450px;
+    }
+
     .page4-left-side-img {
         position: absolute;
         width: 900px;
@@ -166,6 +183,17 @@
 }
 
 @media (max-width: 1024px) {
+    .page4-imagedrone-frame {
+        display: none;
+    }
+
+    .page4-right-side-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .page4-skyline-content {
         height: 105%;
     }
@@ -250,7 +278,7 @@
     }
 
     .page4-right-side-logo {
-        width: 250px;
+        width: 350px;
         margin: 20px auto;
     }
 
@@ -258,6 +286,7 @@
         width: 90%;
         padding: 20px;
         text-align: center;
+        scale: 1;
     }
 
     .page4-drone-title {
@@ -299,13 +328,14 @@
     }
 
     .page4-right-side-logo {
-        width: 200px;
+        width: 300px;
         margin: 10px auto;
     }
 
     .page4-drone-card {
         width: 100%;
         padding: 15px;
+        scale: 1;
     }
 
     .page4-drone-title {
