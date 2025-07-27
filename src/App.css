@@ -28,3 +28,21 @@
   pointer-events: none;
   filter: grayscale(0.5) blur(3px);
 }
+
+.app-page3 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./backgrounds/background16slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+}

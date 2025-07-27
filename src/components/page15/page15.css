@@ -1,0 +1,165 @@
+Весь контейнер
+.page5-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.page5-skyline-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+/* Контент */
+.page5-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+/* Левая часть */
+.page5-left-side {
+    display: flex;
+    padding-top: 30px;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.page5-left-side-drone {
+    font-size: 4.8rem;
+    margin-left: 60px;
+    font-family: "USSRStencil", sans-serif;
+    font-weight: 200;
+}
+
+.page5-left-side-subtext {
+    font-size: 1.2rem;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.page5-table-container {
+    padding-left: 60px;
+}
+
+.page5-table {
+    min-width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #e5e7eb;
+    font-size: 1rem;
+}
+.page5-table-bottom{
+     min-width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #e5e7eb;
+    font-size: 0.8rem;
+    margin-top: 15px;
+}
+
+
+.page5-td {
+    padding: 0.4rem 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page5-tr:hover {
+    background-color: #bdbdbd;
+}
+
+.page5-td-first {
+    border-right: 1px solid #e5e7eb;
+}
+
+.page5-td-last {
+    text-align: right;
+    white-space: pre-line;
+}
+
+.page5-left-side-table-footer {
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 0.95rem;
+}
+
+.page5-right-side {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.page5-banner {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #ff6200;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #333;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+    text-transform: uppercase;
+    scale: 1.2;
+}
+
+.page5-sticker {
+    position: absolute;
+    top: -38px;
+    right: -52px;
+    width: 60px;
+    height: 60px;
+    background: #ff6200;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    z-index: 20;
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+}
+
+.page5-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.page5-right-side-img {
+    position: absolute;
+    width: 900px;
+    margin-top: 20px;
+    bottom: 80px;
+    z-index: 10;
+}
+
