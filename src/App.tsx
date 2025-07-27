@@ -7,6 +7,7 @@ import { Page4 } from './components/page4/page4'
 import { Page5 } from './components/page5/page5'
 
 import { Page7 } from './components/page-7/page7';
+import { Page8 } from './components/page-8/page8';
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -30,6 +31,7 @@ function App() {
         <Page4 />
         <Page5 />
         <Page7 />
+        <Page8 />
         <Page16 />
       </div>
     </>
