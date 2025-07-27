@@ -80,16 +80,13 @@ export function Page5() {
 
                 <div className='page5-right-side' data-aos="fade-left" data-aos-duration="1000">
                     <div className="page5-banner" data-aos="zoom-in" data-aos-delay="200">
-                        FPV КАМИКАДЗЕ
+                        FPV КАМІКАДЗЕ
                     </div>
 
                     <img
                         src="./drones/SKIF_10D.png"
                         alt="SKIF_10D"
-                        className='page5-right-side-img'
-                        data-aos="zoom-in"
-                        data-aos-duration="800"
-                        data-aos-delay="400" />
+                        className='page5-right-side-img'/>
 
                     <div>
                         <div style={{ position: "relative", display: "inline-block" }} data-aos="fade-up" data-aos-delay="600">

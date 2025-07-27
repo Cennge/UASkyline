@@ -78,7 +78,7 @@ export function Page8() {
 
                 <div className='page8-right-side' data-aos="fade-left" data-aos-duration="1000">
                     <div className="page8-banner" data-aos="zoom-in" data-aos-delay="200">
-                        FPV КАМИКАДЗЕ
+                        FPV КАМІКАДЗЕ
                     </div>
 
                     <img
