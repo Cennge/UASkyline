@@ -86,10 +86,7 @@ export function Page5() {
                     <img
                         src="./drones/SKIF_10D.png"
                         alt="SKIF_10D"
-                        className='page5-right-side-img'
-                        data-aos="zoom-in"
-                        data-aos-duration="800"
-                        data-aos-delay="400" />
+                        className='page5-right-side-img'/>
 
                     <div>
                         <div style={{ position: "relative", display: "inline-block" }} data-aos="fade-up" data-aos-delay="600">
