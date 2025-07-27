@@ -1,4 +1,4 @@
-/* Весь контейнер */
+Весь контейнер
 .page5-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
@@ -72,6 +72,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #e5e7eb;
     font-size: 0.8rem;
+    margin-top: 15px;
 }
 
 
@@ -161,5 +162,4 @@
     bottom: 80px;
     z-index: 10;
 }
-
 

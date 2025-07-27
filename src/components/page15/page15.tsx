@@ -30,29 +30,25 @@ export function Page15() {
                 data-aos-duration="500"
             />
 
-            <img className="page5-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
-            <img className="page5-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
+            <img className="page5-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./public/img/madeInUa.jpg" alt="Made in UA" />
+            <img className="page5-bottom-image" data-aos= "fade-up-left" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className='page5-skyline-content'>
                 {/* Левая часть */}
-                <div className="page5-left-side" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 className='page5-left-side-drone'
-                        data-aos="fade-left"
-                        data-aos-duration="1000"
-                        data-aos-delay="200">
+                <div className="page5-left-side" >
+                    <h1 className='page5-left-side-drone' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                         АКБ ДЛЯ РЕБ
                     </h1>
-                    <div className='page5-left-side-subtext' data-aos="fade-left" data-aos-delay="300">
+                    <div className='page5-left-side-subtext'  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         Компактні розміри пристрою та спеціальні ремені в комплекті забезпечують зручне перенесення
                         акумулятора на плечі або за спиною, що підвищує маневреність. Завдяки повному комплекту кабелів і
                         проводів, акумулятор можна заряджати від різних джерел — мережі, автомобіля або генератора.
                     </div>
-                    {/* Таблица характеристик */}
-                    <div className="page5-table-container" data-aos="fade-up" data-aos-delay="400">
+                    <div className="page5-table-container" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500">
                         <table className="page5-table">
                             <tbody>
                                 {data.map((row, index) => (
-                                    <tr key={index} className="page5-tr" data-aos="fade-up" data-aos-delay={500 + index * 50}>
+                                    <tr key={index} className="page5-tr" >
                                         <td className="page5-td page5-td-first">{row.parameter}</td>
                                         <td className="page5-td page5-td-last">{row.value}</td>
                                     </tr>
@@ -62,8 +58,8 @@ export function Page15() {
                     </div>
 
                     {/* Таблица комплектации */}
-                    <div className="page5-table-container" style={{ marginTop: 20 }} data-aos="fade-up" data-aos-delay="1000">
-                        <table className="page5-table-bottom">
+                    <div className="page5-table-container">
+                        <table className="page5-table-bottom" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500" >
                             <thead>
                                 <tr>
                                     <th className="page5-td page5-td-first">Комплектація</th>
@@ -72,7 +68,7 @@ export function Page15() {
                             </thead>
                             <tbody>
                                 {комплект.map((row, index) => (
-                                    <tr key={index} className="page5-tr" data-aos="fade-up" data-aos-delay={1100 + index * 50}>
+                                    <tr key={index} className="page5-tr">
                                         <td className="page5-td page5-td-first">{row.parameter}</td>
                                         <td className="page5-td page5-td-last">{row.value}</td>
                                     </tr>
@@ -83,18 +79,19 @@ export function Page15() {
                 </div>
 
                 {/* Правая часть */}
-                <div className='page5-right-side' data-aos="fade-left" data-aos-duration="1000">
-                    <div className="page5-banner" data-aos="zoom-in" data-aos-delay="200">
+                <div className='page5-right-side' >
+                    <div className="page5-banner" data-aos ="zoom-in" data-aos-duration ="1000" data-aos-delay="300"> 
                         7S1P (LIFEPO4) | 10S1P (LI-NMC)
                     </div>
 
                     <img
                         src="./public/drones/REB_BATTERY.png"
                         alt="Battery"
-                        className='page5-right-side-img'
-                        data-aos="zoom-in"
-                        data-aos-duration="800"
-                        data-aos-delay="400" />
+                        data-aos ="zoom-in"
+                        data-aos-duration ="1000"
+                        data-aos-delay="300"
+                        className='page5-right-side-img' />
+                        
                 </div>
             </div>
         </div>
