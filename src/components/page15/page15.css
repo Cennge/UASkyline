@@ -1,5 +1,4 @@
-Весь контейнер
-.page5-skyline-container {
+.page15-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
     height: 100vh;
@@ -11,7 +10,7 @@
     position: relative;
 }
 
-.page5-skyline-background {
+.page15-skyline-background {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,8 +22,7 @@
     pointer-events: none;
 }
 
-/* Контент */
-.page5-skyline-content {
+.page15-skyline-content {
     display: flex;
     width: 100%;
     height: 100%;
@@ -33,8 +31,7 @@
     z-index: 5;
 }
 
-/* Левая часть */
-.page5-left-side {
+.page15-left-side {
     display: flex;
     padding-top: 30px;
     justify-content: start;
@@ -43,64 +40,64 @@
     width: 50%;
 }
 
-.page5-left-side-drone {
+.page15-left-side-drone {
     font-size: 4.8rem;
     margin-left: 60px;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
 }
 
-.page5-left-side-subtext {
+.page15-left-side-subtext {
     font-size: 1.2rem;
     margin-left: 60px;
     margin-bottom: 10px;
     line-height: 1.4;
 }
 
-.page5-table-container {
+.page15-table-container {
     padding-left: 60px;
 }
 
-.page5-table {
+.page15-table {
     min-width: 60%;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #e5e7eb;
     font-size: 1rem;
 }
-.page5-table-bottom{
-     min-width: 60%;
+
+.page15-table-bottom {
+    min-width: 60%;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #e5e7eb;
     font-size: 0.8rem;
     margin-top: 15px;
 }
 
-
-.page5-td {
+.page15-td {
     padding: 0.4rem 0.5rem;
     border-bottom: 1px solid #e5e7eb;
 }
 
-.page5-tr:hover {
+.page15-tr:hover {
     background-color: #bdbdbd;
 }
 
-.page5-td-first {
+.page15-td-first {
     border-right: 1px solid #e5e7eb;
 }
 
-.page5-td-last {
+.page15-td-last {
     text-align: right;
     white-space: pre-line;
 }
 
-.page5-left-side-table-footer {
+.page15-left-side-table-footer {
     padding-top: 10px;
     padding-left: 60px;
     font-size: 0.95rem;
 }
 
-.page5-right-side {
+.page15-right-side {
     display: flex;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -111,7 +108,7 @@
     width: 50%;
 }
 
-.page5-banner {
+.page15-banner {
     position: relative;
     background-color: #1a1a1a;
     color: #ff6200;
@@ -125,7 +122,7 @@
     scale: 1.2;
 }
 
-.page5-sticker {
+.page15-sticker {
     position: absolute;
     top: -38px;
     right: -52px;
@@ -147,7 +144,7 @@
     user-select: none;
 }
 
-.page5-madeinua-icon {
+.page15-madeinua-icon {
     position: absolute;
     left: 40px;
     bottom: 50px;
@@ -155,7 +152,7 @@
     z-index: 10;
 }
 
-.page5-right-side-img {
+.page15-right-side-img {
     position: absolute;
     width: 900px;
     margin-top: 20px;
@@ -163,3 +160,10 @@
     z-index: 10;
 }
 
+.page15-bottom-image{
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 250px;
+    z-index: 10;
+}

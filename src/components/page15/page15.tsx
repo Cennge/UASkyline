@@ -14,63 +14,61 @@ export function Page15() {
         { parameter: "Вага (Кг)", value: "13 / 15" },
     ];
 
-    const комплект = [
+    const set = [
         { parameter: "Блок живлення від ~220В", value: "25В/15А, 42В/15А" },
         { parameter: "Кабель зарядки від бортової мережі", value: "5, 6" },
         { parameter: "Пульт дистанційного увімкнення/вимкнення батареї з індикацією стану роботи батареї (М)", value: "15, 20" }
     ];
 
     return (
-        <div className="page5-skyline-container">
+        <div className="page15-skyline-container">
             <img
                 src="./public/img/frame.png"
                 alt="Frame Background"
-                className="page5-skyline-background"
+                className="page15-skyline-background"
                 data-aos="fade-up"
                 data-aos-duration="500"
             />
 
-            <img className="page5-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./public/img/madeInUa.jpg" alt="Made in UA" />
-            <img className="page5-bottom-image" data-aos= "fade-up-left" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
+            <img className="page15-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./public/img/madeInUa.jpg" alt="Made in UA" />
+            <img className="page15-bottom-image" data-aos= "fade-up-left" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
 
-            <div className='page5-skyline-content'>
-                {/* Левая часть */}
-                <div className="page5-left-side" >
-                    <h1 className='page5-left-side-drone' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+            <div className='page15-skyline-content'>
+                <div className="page15-left-side" >
+                    <h1 className='page15-left-side-drone' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                         АКБ ДЛЯ РЕБ
                     </h1>
-                    <div className='page5-left-side-subtext'  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div className='page15-left-side-subtext'  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                         Компактні розміри пристрою та спеціальні ремені в комплекті забезпечують зручне перенесення
                         акумулятора на плечі або за спиною, що підвищує маневреність. Завдяки повному комплекту кабелів і
                         проводів, акумулятор можна заряджати від різних джерел — мережі, автомобіля або генератора.
                     </div>
-                    <div className="page5-table-container" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500">
-                        <table className="page5-table">
+                    <div className="page15-table-container" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500">
+                        <table className="page15-table">
                             <tbody>
                                 {data.map((row, index) => (
-                                    <tr key={index} className="page5-tr" >
-                                        <td className="page5-td page5-td-first">{row.parameter}</td>
-                                        <td className="page5-td page5-td-last">{row.value}</td>
+                                    <tr key={index} className="page15-tr" >
+                                        <td className="page15-td page15-td-first">{row.parameter}</td>
+                                        <td className="page15-td page15-td-last">{row.value}</td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
                     </div>
 
-                    {/* Таблица комплектации */}
-                    <div className="page5-table-container">
-                        <table className="page5-table-bottom" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500" >
+                    <div className="page15-table-container">
+                        <table className="page15-table-bottom" data-aos= "fade-right" data-aos-duration="1000" data-aos-delay="500" >
                             <thead>
                                 <tr>
-                                    <th className="page5-td page5-td-first">Комплектація</th>
-                                    <th className="page5-td page5-td-last">Опис</th>
+                                    <th className="page15-td page15-td-first">Комплектація</th>
+                                    <th className="page15-td page15-td-last">Опис</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {комплект.map((row, index) => (
-                                    <tr key={index} className="page5-tr">
-                                        <td className="page5-td page5-td-first">{row.parameter}</td>
-                                        <td className="page5-td page5-td-last">{row.value}</td>
+                                {set.map((row, index) => (
+                                    <tr key={index} className="page15-tr">
+                                        <td className="page15-td page15-td-first">{row.parameter}</td>
+                                        <td className="page15-td page15-td-last">{row.value}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -78,9 +76,8 @@ export function Page15() {
                     </div>
                 </div>
 
-                {/* Правая часть */}
-                <div className='page5-right-side' >
-                    <div className="page5-banner" data-aos ="zoom-in" data-aos-duration ="1000" data-aos-delay="300"> 
+                <div className='page15-right-side' >
+                    <div className="page15-banner" data-aos ="zoom-in" data-aos-duration ="1000" data-aos-delay="300"> 
                         7S1P (LIFEPO4) | 10S1P (LI-NMC)
                     </div>
 
@@ -90,7 +87,7 @@ export function Page15() {
                         data-aos ="zoom-in"
                         data-aos-duration ="1000"
                         data-aos-delay="300"
-                        className='page5-right-side-img' />
+                        className='page15-right-side-img' />
                         
                 </div>
             </div>
