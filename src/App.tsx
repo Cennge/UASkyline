@@ -15,6 +15,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import { useEffect } from 'react'
+import ScrollToTopButton from './components/ScrollToTop/ScrollToTop'
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
         <Page9 />
         <Page15 />
         <Page16 />
+
+        <ScrollToTopButton />
       </div>
     </>
   )
