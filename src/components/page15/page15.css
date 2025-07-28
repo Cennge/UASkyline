@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.page15-skyline-background {
+ .page15-skyline-background{
     position: absolute;
     top: 0;
     left: 0;
@@ -166,4 +166,177 @@
     bottom: 60px;
     width: 250px;
     z-index: 10;
+}
+/* --- ≤ 1440px --- */
+@media (max-width: 1440px) {
+  .page15-right-side-img {
+    width: 700px;
+    bottom: 240px;
+  }
+
+  .page15-left-side-drone {
+    font-size: 4rem;
+    margin-left: 50px;
+  }
+
+  .page15-left-side-subtext,
+  .page15-left-side-table-footer {
+    margin-left: 50px;
+  }
+
+  .page15-table-container {
+    padding-left: 50px;
+  }
+
+  .page15-bottom-image {
+    width: 220px;
+    right: 60px;
+    bottom: 50px;
+  }
+}
+
+/* --- ≤ 1024px (планшеты) --- */
+@media (max-width: 1024px) {
+  .page15-skyline-content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .page15-left-side,
+  .page15-right-side {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .page15-skyline-background{
+    display: none;
+  }
+
+  .page15-left-side-drone,
+  .page15-left-side-subtext,
+  .page15-left-side-table-footer {
+    margin-left: 0;
+  }
+
+  .page15-table-container {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page15-table,
+  .page15-table-bottom {
+    width: 90%;
+  }
+
+  .page15-right-side-img {
+    position: static;
+    width: 520px;
+    margin: 20px auto 0 auto;
+    
+  }
+
+  .page15-bottom-image {
+    display: none;
+  }
+
+  .page15-madeinua-icon {
+    display: none;
+  }
+  
+}
+
+/* --- ≤ 768px (мобильные в альбомной) --- */
+@media (max-width: 768px) {
+  .page15-left-side-drone {
+    font-size: 3rem;
+  }
+
+  .page15-left-side-subtext {
+    font-size: 1rem;
+  }
+
+  .page15-banner {
+    font-size: 20px;
+    padding: 8px 16px;
+  }
+  .page15-skyline-background {
+    display: none;
+  }
+
+  .page15-sticker {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    top: -30px;
+    right: -40px;
+  }
+
+  .page15-table,
+  .page15-table-bottom {
+    font-size: 0.9rem;
+  }
+
+  .page15-right-side-img {
+    width: 500px;
+  }
+
+  .page15-bottom-image {
+   display: none;
+  }
+  .page15-madeinua-icon
+  {
+    display: none;
+  }
+}
+
+/* --- ≤ 425px (мобильные) --- */
+@media (max-width: 425px) {
+  .page15-skyline-container {
+    font-size: 1rem;
+  }
+
+  .page15-left-side-drone {
+    font-size: 2.4rem;
+  }
+
+  .page15-left-side-subtext {
+    font-size: 0.9rem;
+  }
+  .page15-skyline-background {
+    display: none;
+  }
+
+  .page15-banner {
+    font-size: 16px;
+    padding: 6px 12px;
+    scale: 1;
+  }
+
+  .page15-sticker {
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    top: -25px;
+    right: -30px;
+  }
+
+  .page15-table,
+  .page15-table-bottom {
+    font-size: 0.75rem;
+    width: 100%;
+  }
+
+  .page15-right-side-img {
+    width: 100%;
+  }
+
+  .page15-bottom-image {
+    display: none;
+  }
+
+  .page15-madeinua-icon {
+    display: none;
+  }
 }
