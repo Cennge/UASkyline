@@ -1,0 +1,286 @@
+.page14-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.page14-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.page14-left-side-subtext {
+    font-size: 2.1rem;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.page14-table-container {
+    padding-left: 60px;
+}
+
+.page14-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.page14-left-side-drone {
+    font-size: 4.8rem;
+    margin-left: 60px;
+    font-family: "USSRStencil", sans-serif;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.page14-table {
+    min-width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #e5e7eb;
+    font-size: 1rem;
+}
+
+.page14-td {
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page14-td-first {
+    border-right: 1px solid #e5e7eb;
+}
+
+.page14-td-last {
+    text-align: right;
+    white-space: pre-line;
+}
+
+.page14-left-side-table-footer {
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 0.95rem;
+}
+
+.page14-left-side {
+    display: flex;
+    padding-top: 30px;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+.page14-footer-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+    margin-top: 20px;
+    
+}
+
+.page14-footer-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.4;
+    padding-bottom: 50px;
+}
+
+.page14-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.page14-bottom-image {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 250px;
+    z-index: 10;
+}
+
+.page14-right-side {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.page14-banner {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #ff6200;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #333;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+    text-transform: uppercase;
+    scale: 1.2;
+}
+
+.page14-right-side-img {
+    width: 675px;
+    height: auto;
+    object-fit: contain;
+    z-index: 10;
+    margin: auto;
+    margin-right: 20px;
+    transform: translateX(40px);
+}
+
+.page14-main-text {
+    margin-right: 10px;
+}
+.page14-footer-title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+}
+
+.page14-footer-text {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.price-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.price-label {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+}
+
+.price-tag {
+    background-color: #ff6200;
+    color: rgb(0, 0, 0);
+    padding: 6px 14px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.price-currency {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 1440px) {
+    .page14-left-side {
+        scale: 0.8;
+        align-items: center;
+        justify-content: start;
+        padding-top: 0px;
+    }
+
+    .page14-right-side-img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .page14-skyline-container {
+        height: auto;
+    }
+
+    .page14-skyline-background {
+        display: none;
+    }
+
+    .page14-skyline-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .page14-left-side {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page14-right-side {
+        width: 100%;
+        padding-top: 0px;
+        align-items: center;
+    }
+
+    .page14-table-container {
+        padding-left: 0;
+    }
+
+    .page14-table {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .page14-td {
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .page14-banner {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .page14-right-side-img {
+        position: static;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .page14-bottom-image,
+    .page14-madeinua-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .page14-table-container {
+        scale: 0.8;
+    }
+
+    .page14-right-side-img {
+        scale: 1.2;
+    }
+}
