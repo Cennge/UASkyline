@@ -21,10 +21,13 @@
 
 .contacts-logo img {
   width: 500px;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 40px;
   display: block;
   margin-left: 0;
 }
+
 
 .contacts-title {
   font-size: 2.5rem;
@@ -134,12 +137,12 @@
 
   .contacts-item {
     font-size: 1.5rem;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; 
+    align-items: center; 
   }
 
   .contacts-item .icon {
-    margin-bottom: 5px;
+    margin-right: 10px;   
     font-size: 1.6rem;
     width: 30px;
     height: 30px;
@@ -155,7 +158,7 @@
   .contacts-left {
     padding: 20px 10px;
   }
-.contacts-item .icon
+
   .contacts-logo img {
     width: 250px;
   }
@@ -166,15 +169,8 @@
 
   .contacts-item {
     font-size: 1.2rem;
-  }
-  .contacts-item .icon
-  {
-    .contacts-item .icon {
-    margin-bottom: 5px;
-    font-size: 1.6rem;
-    width: 20px;
-    height: 20px;
-  }
+    flex-direction: row;  
+    align-items: center;  
   }
 
   .qr-codes {
@@ -188,3 +184,4 @@
     height: 160px;
   }
 }
+

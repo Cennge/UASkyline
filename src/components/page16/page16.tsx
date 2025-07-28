@@ -30,7 +30,7 @@ export default function Page16() {
               <p>YouControl</p>
             </div>
             <div className="qr-item">
-              <img src="./public/qr/you_control.png" alt="Instagram QR" />
+              <img src="./public/qr/instagramQR.png" alt="Instagram QR" />
               <p>Instagram</p>
             </div>
           </div>
