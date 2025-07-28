@@ -1,0 +1,71 @@
+.page13-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.page13-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.page13-left-side{
+    display: flex;
+    padding-top: 30px;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    width: 50%;
+}
+
+.page13-content {
+    position: relative;
+    padding: 40px;
+    max-width: 1400px;
+    width: 95%;
+    z-index: 2;
+}
+
+.page13-title {
+    font-family: 'USSRStencil';
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.page13-subtitle {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-family: 'USSRStencil';
+}
+
+.page13-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.page13-bottom-image {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 250px;
+    z-index: 10;
+}
+
+
