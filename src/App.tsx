@@ -8,6 +8,7 @@ import { Page6 } from './components/page6/page6'
 import { Page7 } from './components/page7/page7'
 import { Page8 } from './components/page8/page8'
 import { Page9 } from './components/page9/page9'
+import { Page13 } from './components/page13/page13'
 import { Page14 } from './components/page14/page14'
 import { Page15 } from './components/page15/page15';
 import Page16 from './components/page16/page16'
@@ -40,6 +41,7 @@ function App() {
         <Page7 />
         <Page8 />
         <Page9 />
+        <Page13 />
         <Page14 />
         <Page15 />
         <Page16 />
