@@ -195,7 +195,6 @@
   }
 }
 
-/* --- ≤ 1024px (планшеты) --- */
 @media (max-width: 1024px) {
   .page15-skyline-content {
     flex-direction: column;
@@ -247,7 +246,6 @@
   
 }
 
-/* --- ≤ 768px (мобильные в альбомной) --- */
 @media (max-width: 768px) {
   .page15-left-side-drone {
     font-size: 3rem;
@@ -291,7 +289,6 @@
   }
 }
 
-/* --- ≤ 425px (мобильные) --- */
 @media (max-width: 425px) {
   .page15-skyline-container {
     font-size: 1rem;
