@@ -1,0 +1,260 @@
+.page10-skyline-container {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.page10-skyline-background {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+.page10-header-part {
+    margin-top: 40px;
+}
+
+.page10-left-side {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.page10-left-side-subtext {
+    font-size: 2.1rem;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+.page10-table-container {
+    padding-left: 60px;
+    width: 50%;
+}
+
+.page10-skyline-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.page10-left-side-drone {
+    font-size: 4.8rem;
+    margin-left: 60px;
+    font-family: "USSRStencil", sans-serif;
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.page10-table {
+    min-width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #e5e7eb;
+    font-size: 1rem;
+}
+
+.page10-td {
+    padding: 0.2rem 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.page10-td-first {
+    border-right: 1px solid #e5e7eb;
+}
+
+.page10-td-last {
+    text-align: right;
+    white-space: pre-line;
+}
+
+.page10-left-side-table-footer {
+    padding-top: 10px;
+    padding-left: 60px;
+    font-size: 0.95rem;
+}
+
+
+.page10-madeinua-icon {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.page10-bottom-image {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    width: 250px;
+    z-index: 10;
+}
+
+
+.page10-middle-side-img {
+    width: 1200px;
+    position: absolute;
+    z-index: 10;
+    left: 350px;
+    top: 20px;
+}
+
+.page10-footer-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 120px;
+}
+
+.page10-banner {
+    position: relative;
+    background-color: #1a1a1a;
+    color: #ff6200;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #333;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
+    text-transform: uppercase;
+    scale: 1.4;
+    margin-right: 180px;
+}
+
+.page10-main-text {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    white-space: nowrap
+}
+
+/* Responsive styles */
+@media (max-width: 1440px) {
+    .page10-skyline-container {
+        justify-content: flex-start;
+        padding: 0px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .page10-skyline-content {
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .page10-left-side {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page10-left-side-subtext,
+    .page10-left-side-drone,
+    .page10-table-container,
+    .page10-left-side-table-footer {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .page10-left-side-subtext {
+        font-size: 1.8rem;
+    }
+
+    .page10-left-side-drone {
+        font-size: 3.6rem;
+        margin-bottom: 30px;
+    }
+
+    .page10-middle-side-img {
+        position: relative;
+        left: auto;
+        top: 0px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .page10-table-container {
+        width: 100%;
+        max-width: 900px;
+        padding: 0;
+    }
+
+    .page10-footer-part {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .page10-banner {
+        scale: 1;
+        margin: 20px auto 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .page10-skyline-background {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .page10-bottom-image {
+        display: none;
+    }
+
+    .page10-left-side-drone {
+        font-size: 2.6rem;
+    }
+
+    .page10-left-side-subtext {
+        font-size: 1.4rem;
+    }
+
+    .page10-table {
+        font-size: 0.9rem;
+    }
+
+    .page10-banner {
+        font-size: 30px;
+        padding: 8px 16px;
+    }
+
+    .page10-main-text {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .page10-middle-side-img {
+        position: relative;
+        left: auto;
+        top: 0px;
+        width: 100%;
+        max-width: 420px;
+        scale: 1.3;
+    }
+}
