@@ -12,7 +12,7 @@
 
 .page13-skyline-background {
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -22,36 +22,137 @@
     pointer-events: none;
 }
 
-.page13-left-side{
-    display: flex;
-    padding-top: 30px;
-    justify-content: start;
-    flex-direction: column;
+.page13-inner {
     position: relative;
-    width: 50%;
+    z-index: 2;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px; 
+    margin: 0 auto;    
 }
 
-.page13-content {
-    position: relative;
-    padding: 40px;
-    max-width: 1400px;
-    width: 95%;
-    z-index: 2;
+.page13-left {
+    flex: 0 0 700px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin-top: -180px; 
+    margin-left: -300px; 
 }
 
 .page13-title {
     font-family: 'USSRStencil';
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 400;
+    margin: 0;
 }
 
 .page13-subtitle {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
     font-family: 'USSRStencil';
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
+.page13-battery-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page13-battery-image {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+.page13-right {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.page13-mini-table {
+    background: rgba(245, 245, 245, 0.95);
+    border-radius: 4px;
+    padding: 0;
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.page13-table-title {
+    background-color: #bbbbbc;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    line-height: 1.2;
+    padding: 8px;
+    border-bottom: 1px solid #c0c0c0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page13-table-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+}
+
+.page13-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+    color: #333;
+    padding: 4px 8px;
+    border-top: 1px solid #888;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page13-table-row:last-child {
+    border-bottom: 1px solid #888;
+}
+
+.page13-parameter {
+    width: 50%;
+    font-weight: 600;
+    color: #333;
+    border-right: 1px solid #888;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.page13-value {
+    width: 50%;
+    font-weight: 500;
+    color: #333;
+    padding-left: 8px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+/* -------- Icons -------- */
 .page13-madeinua-icon {
     position: absolute;
     left: 40px;
@@ -67,5 +168,3 @@
     width: 250px;
     z-index: 10;
 }
-
-
