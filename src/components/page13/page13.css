@@ -1,16 +1,16 @@
 .page13-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-    box-sizing: border-box; /* Учитываем padding в размерах */
+    box-sizing: border-box;
     padding-top: 40px;
     padding-bottom: 40px;
-    min-height: calc(100vh - 80px); /* Высота минус отступы */
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 1.2rem;
     position: relative;
-    overflow: hidden; /* Предотвращаем выход элементов */
+    overflow: hidden;
 }
 
 .page13-skyline-background {
@@ -265,6 +265,14 @@
 
 /* ----------- 1024px ----------- */
 @media (max-width: 1024px) {
+  .page13-madeinua-icon {
+    display: none;
+  }
+
+  .page13-bottom-image {
+    display: none;
+  }
+  
   .page13-inner {
     flex-direction: column;
     align-items: center;

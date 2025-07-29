@@ -8,13 +8,13 @@ import { Page6 } from './components/page6/page6'
 import { Page7 } from './components/page7/page7'
 import { Page8 } from './components/page8/page8'
 import { Page9 } from './components/page9/page9'
-import { Page10 } from './components/page10/page10';
-import { Page11 } from './components/page11/page11';
+import { Page10 } from './components/page10/page10'
+import { Page11 } from './components/page11/page11'
 import { Page12 } from './components/page12/page12'
 import { Page13 } from './components/page13/page13'
 import { Page14 } from './components/page14/page14'
-import { Page15 } from './components/page15/page15';
-import Page16 from './components/page16/page16'
+import { Page15 } from './components/page15/page15'
+import { Page16 } from './components/page16/page16'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     AOS.init()
   }, [])
-  
+
   return (
     <>
       <div className='main-components'>
@@ -36,7 +36,7 @@ function App() {
           <Page2 />
         </div>
         <div className='app-page3'>
-        <Page3 />
+          <Page3 />
         </div>
         <Page4 />
         <Page5 />

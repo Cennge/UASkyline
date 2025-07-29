@@ -1,6 +1,6 @@
 import "./page16.css";
 
-export default function Page16() {
+export function Page16() {
   return (
     <div className="contacts-container">
       <div className="contacts-left">

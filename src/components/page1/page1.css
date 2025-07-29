@@ -117,6 +117,12 @@
 
 @media (max-width: 1024px) {
     .page1-skyline-container {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 650;
+        height: auto;
+    }
+
+    .page1-skyline-container {
         height: auto;
     }
 
@@ -190,6 +196,10 @@
 }
 
 @media (max-width: 425px) {
+    .page1-verified {
+        position: relative;
+        margin-left: 50%;
+    }
     .page1-highlight[data-aos] {
         opacity: 1 !important;
         transform: none !important;

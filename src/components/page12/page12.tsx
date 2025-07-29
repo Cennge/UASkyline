@@ -1,6 +1,6 @@
 import "./page12.css";
 
-export default function Page12() {
+export function Page12() {
     return (
         <div className="page12-container">
             <div className="page12-warning" data-aos="fade-right" data-aos-delay="0">
