@@ -9,10 +9,10 @@
 
 .page12-warning {
     background-color: transparent;
-    /* путь к красной рамке */
+    background-image: url('./public/img/red_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding: 30px 40px;
+    padding: 40px 50px;
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
@@ -30,6 +30,7 @@
 .page12-text {
     font-size: 1.5rem;
     line-height: 1.5;
+    padding-bottom: 20px;
 }
 
 .page12-title {
@@ -41,7 +42,7 @@
 
 .page12-block {
     background-color: transparent;
-    /* путь к оранжевой рамкке */
+    background-image: url('./public/img/small_orange_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 26px 32px;
@@ -66,12 +67,117 @@
     padding-left: 0;
 }
 
-.page12-asterisked li::before {
-    content: "* ";
-    color: #ff6600;
-    font-weight: bold;
-}
-
 .page12-block p {
     margin: 0 0 12px;
+}
+
+/* ------------------ Адаптив ------------------ */
+
+/* 1440px */
+@media (max-width: 1440px) {
+    .page12-container {
+        padding: 50px 60px;
+    }
+
+    .page12-text {
+        font-size: 1.4rem;
+    }
+
+    .page12-title {
+        font-size: 1.6rem;
+        margin-left: 30px;
+    }
+
+    .page12-block {
+        padding: 24px 28px;
+        font-size: 0.95rem;
+    }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+    .page12-container {
+        padding: 40px 40px;
+    }
+
+    .page12-warning {
+        padding: 32px 40px;
+        flex-direction: column;
+    }
+
+    .page12-text {
+        font-size: 1.3rem;
+    }
+
+    .page12-title {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+    .page12-block {
+        padding: 22px 24px;
+        font-size: 0.95rem;
+    }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+    .page12-container {
+        padding: 30px 20px;
+    }
+
+    .page12-warning {
+        padding: 24px 30px;
+        gap: 12px;
+    }
+
+    .page12-text {
+        font-size: 1.2rem;
+    }
+
+    .page12-title {
+        font-size: 1.4rem;
+        margin-left: 16px;
+    }
+
+    .page12-block {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .page12-icon {
+        font-size: 2rem;
+    }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+    .page12-container {
+        padding: 20px 16px;
+    }
+
+    .page12-warning {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .page12-text {
+        font-size: 1rem;
+    }
+
+    .page12-title {
+        font-size: 1.2rem;
+        margin-left: 10px;
+    }
+
+    .page12-block {
+        padding: 16px;
+        font-size: 0.85rem;
+    }
+
+    .page12-icon {
+        font-size: 1.8rem;
+    }
 }

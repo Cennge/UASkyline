@@ -3,29 +3,29 @@ import "./page12.css";
 export default function Page12() {
     return (
         <div className="page12-container">
-            {/* Красная рамка с углами */}
-            <div className="page12-warning">
-                <div className="page12-icon">❗</div>
+            <div className="page12-warning" data-aos="fade-right" data-aos-delay="0">
+                <div className="page12-icon"></div>
                 <div className="page12-text">
-                    <strong>УВАГА</strong><br />
-                    Шановний партнер!<br />
-                    <strong>Ціни можуть змінюватися залежно від наявності комплектуючих, ринкових умов та обсягу замовлення.
+                    <strong style={{ color: "rgba(255, 0, 0, 1)", fontSize: "2rem" }}> УВАГА </strong><br />
+                    <br />
+                    <strong>Шановний партнер!</strong><br />
+                    <strong>
+                        Ціни можуть змінюватися залежно від наявності комплектуючих, ринкових умов та обсягу замовлення.
                         Просимо врахувати це під час планування закупівлі та заздалегідь узгоджувати остаточну специфікацію перед формуванням рахунку.
                     </strong>
                 </div>
             </div>
 
-            {/* Заголовок */}
-            <div className="page12-title">Примітки</div>
+            <div className="page12-title" data-aos="fade-right" data-aos-delay="100">Примітки</div>
 
-            <div className="page12-block">
+            <div className="page12-block" data-aos="fade-right" data-aos-delay="200">
                 <ol>
                     <li>Допускається в умовному позначенні зазначати додаткові характеристики, що визначають конструктивне рішення комплексу за вимогами замовника.</li>
                     <li>Комплекс може мати будь-які інші назви, містити торгові найменування, логотипи торгової марки виробника або торгової фірми посередника, коди та шифри прийняті на підприємстві-виробнику, які не суперечать чинному законодавству.</li>
                 </ol>
             </div>
 
-            <div className="page12-block">
+            <div className="page12-block" data-aos="fade-right" data-aos-delay="300">
                 <ul className="page12-asterisked">
                     <li>* Кількість кожної складової БпАК затверджується з замовником на основі специфікації на постачання.</li>
                     <li>** Кількість кожної складової БпАК для базового БпЛА, при постачанні замовнику може бути змінена та затверджується з замовником на основі специфікації на постачання.</li>
@@ -34,7 +34,7 @@ export default function Page12() {
                 </ul>
             </div>
 
-            <div className="page12-block">
+            <div className="page12-block" data-aos="fade-right" data-aos-delay="400">
                 <ul className="page12-asterisked">
                     <li>*Склад БпЛА може бути змінений у залежності від моделей складових, які використовуються або, за потреби, доповнений іншими складовими для виконання завдань, але це не повинно погіршувати характеристики виробу.</li>
                     <li>**БпЛА може бути реалізований окремо від комплексу, як самостійна одиниця.</li>
