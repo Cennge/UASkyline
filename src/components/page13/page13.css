@@ -1,18 +1,21 @@
 .page13-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-    height: 100vh;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Учитываем padding в размерах */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: calc(100vh - 80px); /* Высота минус отступы */
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     font-size: 1.2rem;
     position: relative;
+    overflow: hidden; /* Предотвращаем выход элементов */
 }
 
 .page13-skyline-background {
     position: absolute;
-    top: 10;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -22,34 +25,207 @@
     pointer-events: none;
 }
 
-.page13-left-side{
-    display: flex;
-    padding-top: 30px;
-    justify-content: start;
-    flex-direction: column;
+.page13-inner {
     position: relative;
-    width: 50%;
+    z-index: 2;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.page13-content {
-    position: relative;
-    padding: 40px;
-    max-width: 1400px;
-    width: 95%;
-    z-index: 2;
+.page13-left {
+    flex: 0 0 600px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.page13-left-frame {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #bbbbbc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+.page13-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
 }
 
 .page13-title {
-    font-family: 'USSRStencil';
-    font-size: 2.4rem;
+    font-family: 'USSRStencil', sans-serif;
+    font-size: 2.8rem;
     font-weight: 400;
+    margin: 0;
+    text-align: center;
 }
 
 .page13-subtitle {
     font-weight: 700;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-    font-family: 'USSRStencil';
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+.page13-battery-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.page13-battery-image {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+.page13-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 700px;
+}
+
+.page13-mini-table {
+    background: rgba(196, 196, 196, 0.95);
+    border-radius: 4px;
+    padding: 0;
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.page13-table-title {
+    background-color: #bbbbbc;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    line-height: 1.2;
+    padding: 8px;
+    border-bottom: 1px solid #c0c0c0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page13-table-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+}
+
+.page13-table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+    color: #333;
+    padding: 4px 8px;
+    border-top: 1px solid #888;
+    width: 100%;
+    box-sizing: border-box;
+}
+.page13-table-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    overflow-x: auto; 
+    padding-bottom: 10px;
+}
+
+.page13-table-row:last-child {
+    border-bottom: 1px solid #888;
+}
+
+.page13-parameter {
+    width: 50%;
+    font-weight: 600;
+    color: #333;
+    border-right: 1px solid #888;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+.page13-value {
+    width: 50%;
+    font-weight: 500;
+    color: #333;
+    padding-left: 8px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.page13-description {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #333;
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page13-bottom-battery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    width: 100%;
+}
+
+.page13-bottom-battery img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 6px;
+}
+
+.page13-bottom-caption {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #222;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+}
+
+.page13-dronetypes {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111;
+    text-align: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .page13-madeinua-icon {
@@ -68,4 +244,180 @@
     z-index: 10;
 }
 
+/* ----------- 1440px ----------- */
+@media (max-width: 1440px) {
+  .page13-inner {
+    gap: 32px;
+    padding: 0 20px;
+  }
 
+  .page13-left {
+    flex: 0 0 500px;
+    max-width: 500px;
+  }
+
+  .page13-mini-table {
+    width: 220px;
+    min-width: 220px;
+    max-width: 220px;
+  }
+}
+
+/* ----------- 1024px ----------- */
+@media (max-width: 1024px) {
+  .page13-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .page13-left,
+  .page13-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page13-table-row-wrapper {
+    justify-content: flex-start;
+  }
+
+  .page13-left-frame {
+    width: 100%;
+  }
+
+  .page13-title {
+    font-size: 2.4rem;
+  }
+
+  .page13-subtitle {
+    font-size: 1.2rem;
+  }
+  .page13-skyline-background
+  {
+    display: none;
+  }
+  
+}
+
+/* ----------- 768px ----------- */
+@media (max-width: 768px) {
+  .page13-left-frame {
+    padding: 16px;
+  }
+
+  .page13-mini-table {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+  }
+
+  .page13-title {
+    font-size: 2rem;
+  }
+
+  .page13-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .page13-description {
+    font-size: 0.85rem;
+  }
+
+  .page13-dronetypes {
+    font-size: 0.8rem;
+  }
+
+  .page13-bottom-battery img {
+    max-width: 320px;
+  }
+
+  .page13-skyline-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    min-height: calc(100vh - 48px);
+  }
+
+  .page13-skyline-background
+  {
+    display: none;
+  }
+}
+
+/* ----------- 425px ----------- */
+@media (max-width: 425px) {
+  .page13-left-frame {
+    padding: 12px;
+    width: 100%; /* Добавлено, чтобы занимал всю ширину */
+  }
+
+  .page13-title {
+    font-size: 1.6rem;
+  }
+
+  .page13-subtitle {
+    font-size: 1rem;
+  }
+
+  .page13-mini-table {
+    width: 100%; /* Сделать таблицу адаптивной */
+    max-width: 180px; /* Максимум, но может сжиматься */
+    min-width: 120px; /* Минимум для читаемости */
+  }
+
+  .page13-bottom-caption {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+
+  .page13-dronetypes {
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    width: 100%; /* Чтобы не вылазило */
+    box-sizing: border-box;
+  }
+
+  .page13-bottom-battery img {
+    max-width: 280px;
+    width: 100%; /* Поддерживаем адаптивность */
+    height: auto;
+  }
+
+  .page13-madeinua-icon {
+    left: 20px;
+    height: 40px;
+  }
+
+  .page13-bottom-image {
+    right: 20px;
+    width: 200px;
+  }
+
+  .page13-skyline-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-height: calc(100vh - 32px);
+    max-width: 100vw; /* Ограничение по ширине */
+    overflow-x: hidden; /* Запрет горизонтального скролла */
+  }
+
+  .page13-skyline-background {
+    display: none;
+  }
+
+  .page13-inner {
+    padding: 0 12px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page13-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page13-table-row-wrapper {
+    overflow-x: auto; /* Можно прокручивать горизонтально */
+    gap: 12px;
+  }
+}
