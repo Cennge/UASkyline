@@ -38,7 +38,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background3slide.png');
+  background-image: url('./backgrounds/background3slide.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,7 +56,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background4slide.jpg');
+  background-image: url('./backgrounds/background4slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background5slide.jpg');
+  background-image: url('./backgrounds/background5slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/bakcground6slide.jpg');
+  background-image: url('./backgrounds/bakcground6slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background7slide.jpg');
+  background-image: url('./backgrounds/background7slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,7 +129,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background8slide.jpg');
+  background-image: url('./backgrounds/background8slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +147,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background9slide.jpg');
+  background-image: url('./backgrounds/background9slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background10slide.jpg');
+  background-image: url('./backgrounds/background10slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background11slide.jpg');
+  background-image: url('./backgrounds/background11slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background12slide.jpg');
+  background-image: url('./backgrounds/background12slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,7 +220,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background13slide.jpg');
+  background-image: url('./backgrounds/background13slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background14slide.jpg');
+  background-image: url('./backgrounds/background14slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background15slide.jpg');
+  background-image: url('./backgrounds/background15slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./public/backgrounds/background16slide.jpg');
+  background-image: url('./backgrounds/background16slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

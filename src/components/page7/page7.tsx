@@ -12,7 +12,7 @@ export function Page7() {
                 data-aos-delay="100"
             />
 
-            <img className="page7-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" />
+            <img className="page7-madeinua-icon" src="./img/madeInUa.jpg" alt="Made in UA" />
 
             <div className="page7-skyline-content">
                 <div className='page7-left-side'>

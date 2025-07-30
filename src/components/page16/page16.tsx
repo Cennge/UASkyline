@@ -5,7 +5,7 @@ export function Page16() {
     <div className="contacts-container">
       <div className="contacts-left">
         <img
-          src="./public/logo/UASkyline_logo5.png"
+          src="./logo/UASkyline_logo5.png"
           alt="UASkyline Logo"
           className="contacts-logo"
         />
@@ -26,11 +26,11 @@ export function Page16() {
 
           <div className="qr-codes">
             <div className="qr-item">
-              <img src="./public/qr/you_control.png" alt="YouControl QR" />
+              <img src="./qr/you_control.png" alt="YouControl QR" />
               <p>YouControl</p>
             </div>
             <div className="qr-item">
-              <img src="./public/qr/instagramQR.png" alt="Instagram QR" />
+              <img src="./qr/instagramQR.png" alt="Instagram QR" />
               <p>Instagram</p>
             </div>
           </div>

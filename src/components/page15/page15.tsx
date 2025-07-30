@@ -23,15 +23,15 @@ export function Page15() {
     return (
         <div className="page15-skyline-container">
             <img
-                src="./public/img/frame.png"
+                src="./img/frame.png"
                 alt="Frame Background"
                 className="page15-skyline-background"
                 data-aos="fade-up"
                 data-aos-duration="500"
             />
 
-            <img className="page15-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./public/img/madeInUa.jpg" alt="Made in UA" />
-            <img className="page15-bottom-image" data-aos= "fade-up-left" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
+            <img className="page15-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./img/madeInUa.jpg" alt="Made in UA" />
+            <img className="page15-bottom-image" data-aos= "fade-up-left" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className='page15-skyline-content'>
                 <div className="page15-left-side" >
@@ -82,7 +82,7 @@ export function Page15() {
                     </div>
 
                     <img
-                        src="./public/drones/REB_BATTERY.png"
+                        src="./drones/REB_BATTERY.png"
                         alt="Battery"
                         data-aos ="zoom-in"
                         data-aos-duration ="1000"

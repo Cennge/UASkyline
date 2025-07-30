@@ -52,7 +52,7 @@ export function Page13() {
             />
             <img
                 className="page13-madeinua-icon"
-                src="./public/img/madeInUa.jpg"
+                src="./img/madeInUa.jpg"
                 alt="Made in UA"
                 data-aos="fade-down-left"
                 data-aos-duration="1000"
@@ -63,7 +63,7 @@ export function Page13() {
                 data-aos="fade-up-left"
                 data-aos-duration="1000"
                 data-aos-delay={200}
-                src="./public/logo/UASkyline_logo8.png"
+                src="./logo/UASkyline_logo8.png"
                 alt="Logo"
             />
 
@@ -104,7 +104,7 @@ export function Page13() {
                                 data-aos-delay={700}
                             >
                                 <img
-                                    src="./public/drones/drone_battery.png"
+                                    src="./drones/drone_battery.png"
                                     alt="Battery"
                                     className="page13-battery-image"
                                 />
@@ -145,7 +145,7 @@ export function Page13() {
                         data-aos-duration="1000"
                         data-aos-delay={1300}
                     >
-                        <img src="./public/drones/2battery.png" alt="Battery Model" />
+                        <img src="./drones/2battery.png" alt="Battery Model" />
                         <div className="page13-bottom-caption">
                             Під замовленням відповідно до Вашого ТЗ
                         </div>

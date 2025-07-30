@@ -35,8 +35,8 @@ export function Page5() {
                 data-aos-duration="500"
             />
 
-            <img className="page5-madeinua-icon" src="./public/img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
-            <img className="page5-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./public/logo/UASkyline_logo8.png" alt="Logo" />
+            <img className="page5-madeinua-icon" src="./img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
+            <img className="page5-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className='page5-skyline-content'>
                 <div className="page5-left-side" data-aos="fade-right" data-aos-duration="1000">
