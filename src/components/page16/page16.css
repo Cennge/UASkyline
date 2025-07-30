@@ -3,7 +3,6 @@
   left: 300px;
   position: relative;
   min-height: 100vh;
-  background: #bbbbbc;
   font-family: "Montserrat", sans-serif;
 }
 .contacts-content {
@@ -79,7 +78,7 @@
 
 .contacts-right {
   flex: 1;
-  background: #bbbbbc; 
+
 }
 
 @media (max-width: 1440px) {

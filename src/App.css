@@ -38,11 +38,251 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background16slide.jpg');
+  background-image: url('./public/backgrounds/background3slide.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.1;
   z-index: -1;
   pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page4 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background4slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+
+.app-page5 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page5::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background5slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page6 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page6::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/bakcground6slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page7 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page7::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background7slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page8 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page8::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background8slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page9 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page9::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background9slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page10 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page10::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background10slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page11 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page11::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background11slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+.app-page12 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page12::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background12slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+
+.app-page13 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page13::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background13slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+
+.app-page14 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page14::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background14slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+
+.app-page15 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page15::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background15slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
+}
+
+.app-page16 {
+  position: relative;
+  z-index: 1;
+}
+
+.app-page16::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('./public/backgrounds/background16slide.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }

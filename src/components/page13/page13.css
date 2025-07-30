@@ -49,7 +49,6 @@
 .page13-left-frame {
     padding: 20px;
     border-radius: 10px;
-    background-color: #bbbbbc;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 

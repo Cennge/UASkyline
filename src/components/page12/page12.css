@@ -1,6 +1,5 @@
 .page12-container {
     font-family: "Montserrat", sans-serif;
-    background-color: #bbbbbc;
     padding: 60px 80px;
     color: #111;
     width: 100%;
@@ -71,9 +70,6 @@
     margin: 0 0 12px;
 }
 
-/* ------------------ Адаптив ------------------ */
-
-/* 1440px */
 @media (max-width: 1440px) {
     .page12-container {
         padding: 50px 60px;
@@ -94,7 +90,6 @@
     }
 }
 
-/* 1024px */
 @media (max-width: 1024px) {
     .page12-container {
         padding: 40px 40px;
@@ -120,7 +115,6 @@
     }
 }
 
-/* 768px */
 @media (max-width: 768px) {
     .page12-container {
         padding: 30px 20px;
@@ -150,7 +144,6 @@
     }
 }
 
-/* 425px */
 @media (max-width: 425px) {
     .page12-container {
         padding: 20px 16px;
