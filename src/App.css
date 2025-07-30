@@ -19,14 +19,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background2slide.jpg');
+  background-image: url('./backgrounds/1ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 
 .app-page3 {
@@ -38,14 +38,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background3slide.png');
+  background-image: url('./backgrounds/2ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page4 {
   position: relative;
@@ -56,14 +56,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background4slide.jpg');
+  background-image: url('./backgrounds/3ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 
 .app-page5 {
@@ -75,14 +75,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background5slide.jpg');
+  background-image: url('./backgrounds/4ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page6 {
   position: relative;
@@ -93,14 +93,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/bakcground6slide.jpg');
+  background-image: url('./backgrounds/5ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page7 {
   position: relative;
@@ -111,14 +111,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background7slide.jpg');
+  background-image: url('./backgrounds/6ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page8 {
   position: relative;
@@ -129,14 +129,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background8slide.jpg');
+  background-image: url('./backgrounds/7ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page9 {
   position: relative;
@@ -147,14 +147,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background9slide.jpg');
+  background-image: url('./backgrounds/8ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page10 {
   position: relative;
@@ -165,14 +165,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background10slide.jpg');
+  background-image: url('./backgrounds/9ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page11 {
   position: relative;
@@ -183,14 +183,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background11slide.jpg');
+  background-image: url('./backgrounds/2ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page12 {
   position: relative;
@@ -277,12 +277,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/background16slide.jpg');
+  background-image: url('./backgrounds/10ф.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
-  filter: grayscale(0.5) blur(3px);
+  /* filter: grayscale(0.5) blur(3px); */
 }
