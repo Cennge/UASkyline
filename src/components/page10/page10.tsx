@@ -17,7 +17,6 @@ export function Page10() {
                 data-aos-duration="500"
             />
 
-            <img className="page10-madeinua-icon" src="./img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
             <img className="page10-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className="page10-skyline-content">

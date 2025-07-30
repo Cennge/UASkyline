@@ -173,4 +173,44 @@
     .page12-icon {
         font-size: 1.8rem;
     }
+
+    @media (max-width: 375px) {
+        .page12-container {
+            padding: 16px 12px;
+        }
+
+        .page12-warning {
+            padding: 16px;
+            gap: 8px;
+            min-height: auto;
+        }
+
+        .page12-icon {
+            font-size: 1.6rem;
+            margin-top: 0;
+        }
+
+        .page12-text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            padding-bottom: 12px;
+        }
+
+        .page12-title {
+            font-size: 1.1rem;
+            margin-left: 6px;
+            margin-bottom: 4px;
+        }
+
+        .page12-block {
+            padding: 14px;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .page12-block li {
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+    }
 }

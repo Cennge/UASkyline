@@ -243,7 +243,6 @@
     z-index: 10;
 }
 
-/* ----------- 1440px ----------- */
 @media (max-width: 1440px) {
   .page13-inner {
     gap: 32px;
@@ -262,7 +261,6 @@
   }
 }
 
-/* ----------- 1024px ----------- */
 @media (max-width: 1024px) {
   .page13-madeinua-icon {
     display: none;
@@ -306,7 +304,6 @@
   
 }
 
-/* ----------- 768px ----------- */
 @media (max-width: 768px) {
   .page13-left-frame {
     padding: 16px;
@@ -350,11 +347,10 @@
   }
 }
 
-/* ----------- 425px ----------- */
 @media (max-width: 425px) {
   .page13-left-frame {
     padding: 12px;
-    width: 100%; /* Добавлено, чтобы занимал всю ширину */
+    width: 100%; 
   }
 
   .page13-title {
@@ -366,9 +362,9 @@
   }
 
   .page13-mini-table {
-    width: 100%; /* Сделать таблицу адаптивной */
-    max-width: 180px; /* Максимум, но может сжиматься */
-    min-width: 120px; /* Минимум для читаемости */
+    width: 100%; 
+    max-width: 180px; 
+    min-width: 120px; 
   }
 
   .page13-bottom-caption {
@@ -379,13 +375,13 @@
   .page13-dronetypes {
     font-size: 0.75rem;
     padding: 4px 6px;
-    width: 100%; /* Чтобы не вылазило */
+    width: 100%; 
     box-sizing: border-box;
   }
 
   .page13-bottom-battery img {
     max-width: 280px;
-    width: 100%; /* Поддерживаем адаптивность */
+    width: 100%; 
     height: auto;
   }
 
@@ -403,8 +399,8 @@
     padding-top: 16px;
     padding-bottom: 16px;
     min-height: calc(100vh - 32px);
-    max-width: 100vw; /* Ограничение по ширине */
-    overflow-x: hidden; /* Запрет горизонтального скролла */
+    max-width: 100vw; 
+    overflow-x: hidden; 
   }
 
   .page13-skyline-background {
@@ -424,7 +420,75 @@
   }
 
   .page13-table-row-wrapper {
-    overflow-x: auto; /* Можно прокручивать горизонтально */
+    overflow-x: auto; 
     gap: 12px;
   }
+  
+  @media (max-width: 375px) {
+  .page13-skyline-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-height: auto;
+  }
+
+  .page13-inner {
+    padding: 0 8px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page13-left-frame {
+    padding: 10px;
+  }
+
+  .page13-title {
+    font-size: 1.4rem;
+  }
+
+  .page13-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .page13-battery-image {
+    max-width: 260px;
+  }
+
+  .page13-mini-table {
+    width: 100%;
+    max-width: 160px;
+    min-width: 120px;
+  }
+
+  .page13-table-title {
+    font-size: 0.65rem;
+    height: auto;
+    padding: 6px;
+  }
+
+  .page13-table-row {
+    font-size: 0.75rem;
+    padding: 3px 6px;
+  }
+
+  .page13-description {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .page13-bottom-battery img {
+    max-width: 240px;
+  }
+
+  .page13-bottom-caption {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+
+  .page13-dronetypes {
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+}
+
 }

@@ -5,8 +5,9 @@
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
 }
+
 .contacts-content {
-  margin-left: 60px; 
+  margin-left: 60px;
 }
 
 .contacts-left {
@@ -58,7 +59,7 @@
   display: flex;
   gap: 40px;
   margin-top: 40px;
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 .qr-item {
@@ -136,12 +137,12 @@
 
   .contacts-item {
     font-size: 1.5rem;
-    flex-direction: row; 
-    align-items: center; 
+    flex-direction: row;
+    align-items: center;
   }
 
   .contacts-item .icon {
-    margin-right: 10px;   
+    margin-right: 10px;
     font-size: 1.6rem;
     width: 30px;
     height: 30px;
@@ -168,8 +169,8 @@
 
   .contacts-item {
     font-size: 1.2rem;
-    flex-direction: row;  
-    align-items: center;  
+    flex-direction: row;
+    align-items: center;
   }
 
   .qr-codes {
@@ -182,5 +183,19 @@
     width: 160px;
     height: 160px;
   }
-}
 
+  @media (max-width: 375px) {
+    .contacts-title {
+      font-size: 1.6rem;
+    }
+
+    .contacts-item {
+      font-size: 1rem;
+    }
+
+    .qr-item img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}

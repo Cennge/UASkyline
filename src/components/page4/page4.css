@@ -367,4 +367,90 @@
     .page4-drone-description {
         font-size: 1rem;
     }
+
+    @media (max-width: 375px) {
+        .page4-skyline-container {
+            font-size: 1rem;
+            height: auto;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .page4-skyline-content {
+            flex-direction: column;
+            padding: 15px 5px;
+            height: auto;
+        }
+
+        .page4-left-side {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .page4-left-side-header {
+            font-size: 0.85rem;
+            margin: 5px 0;
+        }
+
+        .page4-left-side-img {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            right: 0;
+            top: 0;
+            margin-bottom: 15px;
+        }
+
+        .page4-left-side-features-list {
+            font-size: 0.85rem;
+            padding: 0 5px;
+        }
+
+        .page4-left-side-feature-item {
+            margin-left: 10px;
+            font-size: 0.85rem;
+        }
+
+        .page4-right-side {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .page4-right-side-logo {
+            width: 250px;
+            margin: 10px auto;
+        }
+
+        .page4-drone-card {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            scale: 1;
+        }
+
+        .page4-drone-title {
+            font-size: 1.4rem;
+        }
+
+        .page4-drone-subtitle {
+            font-size: 1.1rem;
+        }
+
+        .page4-drone-description {
+            font-size: 0.95rem;
+        }
+
+        .page4-madeinua-icon {
+            left: 5px;
+            bottom: 5px;
+            height: 20px;
+        }
+
+        .page4-imagedrone-frame {
+            display: none;
+        }
+    }
 }

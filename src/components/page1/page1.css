@@ -29,15 +29,23 @@
     -webkit-user-drag: none;
     pointer-events: none;
     opacity: 0.7;
-    transition: transform 0.1s linear; 
+    transition: transform 0.1s linear;
     transform: translate(var(--move-x, 0), var(--move-y, 0)) rotate(var(--rotate-z, 0));
     animation: hover 2s ease-in-out infinite;
 }
 
 @keyframes hover {
-    0% { transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 0px)) rotate(var(--rotate-z, 0)); }
-    50% { transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 10px)) rotate(var(--rotate-z, 0)); }
-    100% { transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 0px)) rotate(var(--rotate-z, 0)); }
+    0% {
+        transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 0px)) rotate(var(--rotate-z, 0));
+    }
+
+    50% {
+        transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 10px)) rotate(var(--rotate-z, 0));
+    }
+
+    100% {
+        transform: translate(var(--move-x, 0), calc(var(--move-y, 0) + 0px)) rotate(var(--rotate-z, 0));
+    }
 }
 
 .page1-skyline-left {
@@ -219,14 +227,15 @@
 }
 
 @media (max-width: 425px) {
-    .page1-drone-image{
+    .page1-drone-image {
         display: none;
     }
-    
+
     .page1-verified {
         position: relative;
         margin-left: 50%;
     }
+
     .page1-highlight[data-aos] {
         opacity: 1 !important;
         transform: none !important;
@@ -264,5 +273,53 @@
         width: 220px;
         display: flex;
         justify-content: center;
+    }
+
+    @media (max-width: 375px) {
+        .page1-skyline-container {
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        .page1-skyline-content {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .page1-skyline-logo img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .page1-skyline-description p {
+            margin-left: 0;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        .page1-drone-image {
+            display: none;
+        }
+
+        .page1-soldier-image {
+            display: none;
+        }
+
+        .page1-verified {
+            position: relative;
+            right: auto;
+            top: 10px;
+            transform: none;
+            width: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page1-highlight {
+            font-size: 1rem;
+            text-align: center;
+        }
     }
 }

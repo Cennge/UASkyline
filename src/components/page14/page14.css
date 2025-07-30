@@ -83,13 +83,14 @@
     position: relative;
     width: 50%;
 }
+
 .page14-footer-title {
     font-weight: 800;
     font-size: 1.5rem;
     margin-bottom: 6px;
     color: #1a1a1a;
     margin-top: 20px;
-    
+
 }
 
 .page14-footer-text {
@@ -154,6 +155,7 @@
 .page14-main-text {
     margin-right: 10px;
 }
+
 .page14-footer-title {
     font-weight: 800;
     font-size: 1.1rem;

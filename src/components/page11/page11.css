@@ -4,7 +4,7 @@
     height: auto;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     font-size: 1.2rem;
@@ -13,11 +13,11 @@
 }
 
 .page11-upper {
-    display: block; 
-    width: 100%; 
-    padding: 40px;  
-    box-sizing: border-box; 
-    margin-top: 40px; 
+    display: block;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
 }
 
 .page11-skyline-background {
@@ -44,8 +44,8 @@
     padding: 0 150px;
     gap: 60px;
     box-sizing: border-box;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .page11-left-side-drone {
@@ -59,11 +59,11 @@
     font-size: 3.2rem;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
-    
+
 }
 
 .page11-left-side {
-    width: 50%; 
+    width: 50%;
     padding: 60px 0;
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@
 }
 
 .page11-middle-side-img {
-    width:  70%;
+    width: 70%;
     position: relative;
     z-index: 10;
 }
@@ -88,7 +88,7 @@
 }
 
 .page11-right-side {
-    width: 50%; 
+    width: 50%;
     padding: 60px 0;
     display: flex;
     flex-direction: column;
@@ -226,7 +226,75 @@
 }
 
 @media (max-width: 425px) {
-    .page11-right-side-img{
+    .page11-right-side-img {
         scale: 1.2;
+    }
+
+    @media (max-width: 375px) {
+        .page11-upper {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .page11-skyline-content {
+            flex-direction: column;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .page11-left-side,
+        .page11-right-side {
+            width: 100%;
+            padding: 20px 10px;
+        }
+
+        .page11-left-side-subtext {
+            font-size: 1.2rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .page11-left-side-drone {
+            font-size: 2rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .page11-block-drone {
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        .page11-banner {
+            font-size: 18px;
+            padding: 8px 12px;
+            width: 100%;
+            scale: 1;
+        }
+
+        .page11-right-side-banner-description {
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .page11-sticker {
+            scale: 1;
+            top: -25px;
+            right: -20px;
+            font-size: 12px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .page11-middle-side-img {
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .page11-right-side-img {
+            width: 100%;
+            scale: 1.05;
+            margin: 10px 0;
+        }
     }
 }

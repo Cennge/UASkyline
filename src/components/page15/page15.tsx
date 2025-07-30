@@ -30,7 +30,6 @@ export function Page15() {
                 data-aos-duration="500"
             />
 
-            <img className="page15-madeinua-icon" data-aos="fade-right" data-aos-duration="1000" src="./img/madeInUa.jpg" alt="Made in UA" />
             <img className="page15-bottom-image" data-aos= "fade-up-left" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className='page15-skyline-content'>

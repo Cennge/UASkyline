@@ -3,7 +3,6 @@ import './page11.css';
 export function Page11() {
     return (
         <div className="page11-skyline-container">
-            <img className="page11-madeinua-icon" src="./img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
             
             <div className='page11-upper' data-aos="fade-right" data-aos-duration="1000">
                 <h1 className='page11-left-side-drone'

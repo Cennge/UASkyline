@@ -270,4 +270,101 @@
     .page9-right-side-img {
         scale: 1.2;
     }
+
+    @media (max-width: 375px) {
+        .page9-skyline-container {
+            font-size: 1rem;
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .page9-skyline-content {
+            flex-direction: column;
+            padding: 10px 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page9-left-side {
+            width: 100%;
+            align-items: center;
+            padding-top: 10px;
+        }
+
+        .page9-left-side-drone {
+            font-size: 2.5rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .page9-left-side-subtext {
+            font-size: 1.1rem;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .page9-table-container {
+            padding-left: 0;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .page9-table {
+            width: 100%;
+            font-size: 0.85rem;
+        }
+
+        .page9-td {
+            padding: 0.5rem 0.6rem;
+        }
+
+        .page9-left-side-table-footer {
+            padding-left: 0;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .page9-right-side {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .page9-banner {
+            font-size: 0.95rem;
+            width: 100%;
+            padding: 8px 10px;
+            text-align: center;
+            scale: 1;
+        }
+
+        .page9-sticker {
+            top: -20px;
+            right: -25px;
+            width: 50px;
+            height: 50px;
+            font-size: 12px;
+            scale: 1.2;
+        }
+
+        .page9-right-side-banner-description {
+            font-size: 0.9rem;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .page9-right-side-img {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            scale: 1;
+        }
+
+        .page9-bottom-image,
+        .page9-madeinua-icon {
+            display: none;
+        }
+    }
 }

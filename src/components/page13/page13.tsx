@@ -51,14 +51,6 @@ export function Page13() {
                 data-aos-delay={0}
             />
             <img
-                className="page13-madeinua-icon"
-                src="./img/madeInUa.jpg"
-                alt="Made in UA"
-                data-aos="fade-down-left"
-                data-aos-duration="1000"
-                data-aos-delay={100}
-            />
-            <img
                 className="page13-bottom-image"
                 data-aos="fade-up-left"
                 data-aos-duration="1000"

@@ -11,7 +11,6 @@ export function Page3() {
                 data-aos-duration="500"
             />
 
-            <img className="page3-madeinua-icon" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" src="./img/madeInUa.jpg" alt="Made in UA" />
             <img className="page3-bottom-image" data-aos="fade-up-left" data-aos-duration= "1000" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className="page3-columns">

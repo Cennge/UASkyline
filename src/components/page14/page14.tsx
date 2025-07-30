@@ -20,11 +20,9 @@ export function Page14() {
                 data-aos-duration="500"
             />
 
-            <img className="page14-madeinua-icon" src="./img/madeInUa.jpg" alt="Made in UA" data-aos="fade-right" data-aos-duration="800" />
             <img className="page14-bottom-image" data-aos="fade-up-left" data-aos-duration="1000" src="./logo/UASkyline_logo8.png" alt="Logo" />
 
             <div className="page14-skyline-content">
-                {/* Левая часть */}
                 <div className="page14-left-side" data-aos="fade-right" data-aos-duration="1000">
                     <h1 className="page14-left-side-drone" data-aos="fade-left" data-aos-delay="200">
                         АКБ ДЛЯ MAVIC
@@ -65,7 +63,6 @@ export function Page14() {
                     </div>
                 </div>
 
-                {/* Правая часть */}
                 <div className="page14-right-side" data-aos="fade-left" data-aos-duration="1000">
                     <img
                         src="./drones/MAVIC_battery.png"

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    
+
     position: relative;
 }
 
@@ -152,9 +152,10 @@
 }
 
 @media (max-width: 1440px) {
-    .page7-drone-card{
+    .page7-drone-card {
         scale: 0.85;
     }
+
     .page7-imagedrone-frame {
         width: 300px;
         right: 450px;
@@ -367,5 +368,95 @@
 
     .page7-drone-description {
         font-size: 1rem;
+    }
+
+    @media (max-width: 375px) {
+        .page7-skyline-container {
+            font-size: 1rem;
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .page7-skyline-content {
+            flex-direction: column;
+            padding: 10px 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page7-left-side {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+        }
+
+        .page7-left-side-header {
+            font-size: 0.85rem;
+            margin: 5px 0;
+        }
+
+        .page7-left-side-drone {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .page7-left-side-img {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .page7-left-side-features-list {
+            font-size: 0.85rem;
+            padding: 0 5px;
+        }
+
+        .page7-left-side-feature-item {
+            font-size: 0.85rem;
+            margin-left: 10px;
+        }
+
+        .page7-right-side {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .page7-right-side-logo {
+            width: 250px;
+            margin: 10px auto;
+        }
+
+        .page7-drone-card {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            scale: 1;
+        }
+
+        .page7-drone-title {
+            font-size: 1.4rem;
+        }
+
+        .page7-drone-subtitle {
+            font-size: 1.1rem;
+        }
+
+        .page7-drone-description {
+            font-size: 0.95rem;
+        }
+
+        .page7-madeinua-icon {
+            left: 5px;
+            bottom: 5px;
+            height: 20px;
+        }
+
+        .page7-imagedrone-frame {
+            display: none;
+        }
     }
 }
