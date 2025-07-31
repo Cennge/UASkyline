@@ -1,13 +1,12 @@
 .page7-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-    height: 100vh;
+    height: auto; /* Высота адаптирована для мобильных устройств */
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-
+    font-size: clamp(0.875rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.2rem */
     position: relative;
 }
 
@@ -34,6 +33,7 @@
     height: 100%;
     padding: 80px;
     box-sizing: border-box;
+    max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page7-left-side {
@@ -45,17 +45,21 @@
 }
 
 .page7-left-side-header {
-    font-size: 1.1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1.1rem); /* Адаптивный размер вместо 1.1rem */
     margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 20px;
+    line-height: 1.4; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page7-left-side-drone {
-    font-size: 5.5rem;
+    font-size: clamp(3.5rem, 6vw, 5.5rem); /* Адаптивный размер вместо 5.5rem */
     margin-bottom: 10px;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
+    line-height: 1.1; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page7-left-side-img {
@@ -70,9 +74,11 @@
     color: #000;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1.1rem); /* Адаптивный размер вместо 1.1rem */
     padding: 10px 20px;
     border-radius: 10px;
+    line-height: 1.5; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page7-left-side-features-items {
@@ -85,8 +91,10 @@
     margin-bottom: 20px;
     margin-left: 30px;
     font-weight: 700;
+    font-size: clamp(0.875rem, 1.8vw, 1.1rem); /* Адаптивный размер вместо отсутствующего */
+    line-height: 1.5; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
-
 
 .page7-right-side {
     display: flex;
@@ -109,24 +117,31 @@
     width: 320px;
     color: #000;
     position: relative;
+    max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page7-drone-title {
     font-weight: 700;
-    font-size: 2.1rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem); /* Адаптивный размер вместо 2.1rem */
     margin-bottom: 10px;
+    line-height: 1.2; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page7-drone-subtitle {
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem); /* Адаптивный размер вместо 1.3rem */
     margin-bottom: 15px;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page7-drone-description {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 1.8vw, 1.2rem); /* Адаптивный размер вместо 1.2rem */
     line-height: 1.5;
+    overflow-wrap: break-word; /* Перенос длинных слов */
+    max-width: 100%; /* Ограничение ширины текста */
 }
 
 .page7-drone-accent-line {
@@ -169,7 +184,7 @@
     }
 
     .page7-left-side-header {
-        font-size: 1rem;
+        font-size: clamp(0.8125rem, 1.6vw, 1rem); /* Адаптивный размер вместо 1rem */
         margin-top: 20px;
         margin-left: 10px;
     }
@@ -178,7 +193,7 @@
         color: #000;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: clamp(0.8125rem, 1.6vw, 1rem); /* Адаптивный размер вместо 1rem */
         padding: 0;
         padding-top: 20px;
     }
@@ -189,10 +204,26 @@
         margin-bottom: 100px;
     }
 
+    .page7-left-side-feature-item {
+        font-size: clamp(0.8125rem, 1.6vw, 1rem); /* Адаптивный размер */
+    }
+
     .page7-right-side-logo {
         width: 350px;
         margin-right: 50px;
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .page7-left-side-img {
+        width: 700px;
+        right: 80px;
+    }
+
+    .page7-imagedrone-frame {
+        top: 400px;
+        right: 400px;
     }
 }
 
@@ -245,6 +276,34 @@
     .page7-drone-card {
         scale: 0.85;
     }
+
+    .page7-left-side-header {
+        font-size: clamp(0.875rem, 1.6vw, 1rem); /* Адаптивный размер */
+    }
+
+    .page7-left-side-drone {
+        font-size: clamp(3rem, 5vw, 4.5rem); /* Адаптивный размер */
+    }
+
+    .page7-left-side-features-list {
+        font-size: clamp(0.875rem, 1.6vw, 1rem); /* Адаптивный размер */
+    }
+
+    .page7-left-side-feature-item {
+        font-size: clamp(0.875rem, 1.6vw, 1rem); /* Адаптивный размер */
+    }
+
+    .page7-drone-title {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Адаптивный размер вместо 2rem */
+    }
+
+    .page7-drone-subtitle {
+        font-size: clamp(1rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.5rem */
+    }
+
+    .page7-drone-description {
+        font-size: clamp(0.875rem, 1.8vw, 1.125rem); /* Адаптивный размер вместо 1.2rem */
+    }
 }
 
 @media (max-width: 768px) {
@@ -258,6 +317,7 @@
         height: auto;
         flex-direction: column;
         padding: 20px;
+        font-size: clamp(0.8125rem, 1.8vw, 1rem);
     }
 
     .page7-skyline-content {
@@ -282,12 +342,18 @@
     }
 
     .page7-left-side-features-list {
-        font-size: 1rem;
+        font-size: clamp(0.9375rem, 1.6vw, 1rem); /* Увеличен минимальный размер вместо 1rem */
         padding: 0 10px;
+        line-height: 1.7; /* Улучшена читаемость */
     }
 
     .page7-left-side-features-items {
         margin-bottom: 40px;
+    }
+
+    .page7-left-side-feature-item {
+        font-size: clamp(0.9375rem, 1.6vw, 1rem); /* Увеличен минимальный размер */
+        line-height: 1.7; /* Улучшена читаемость */
     }
 
     .page7-right-side {
@@ -310,15 +376,26 @@
     }
 
     .page7-drone-title {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Адаптивный размер вместо 2rem */
+        line-height: 1.3; /* Улучшена читаемость */
     }
 
     .page7-drone-subtitle {
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 2vw, 1.5rem); /* Адаптивный размер вместо 1.5rem */
+        line-height: 1.4; /* Улучшена читаемость */
     }
 
     .page7-drone-description {
-        font-size: 1.2rem;
+        font-size: clamp(0.9375rem, 1.6vw, 1.2rem); /* Адаптивный размер вместо 1.2rem */
+        line-height: 1.7; /* Улучшена читаемость */
+    }
+
+    .page7-left-side-header {
+        font-size: clamp(0.9375rem, 1.6vw, 1rem); /* Увеличен минимальный размер */
+    }
+
+    .page7-left-side-drone {
+        font-size: clamp(2.5rem, 4.5vw, 3.5rem); /* Адаптивный размер */
     }
 }
 
@@ -328,8 +405,9 @@
     }
 
     .page7-left-side-header {
-        font-size: 0.9rem;
+        font-size: clamp(0.875rem, 1.4vw, 0.9rem); /* Увеличен минимальный размер вместо 0.9rem */
         margin: 10px 0;
+        line-height: 1.5; /* Улучшена читаемость */
     }
 
     .page7-left-side-img {
@@ -338,13 +416,15 @@
     }
 
     .page7-left-side-features-list {
-        font-size: 0.9rem;
+        font-size: clamp(0.875rem, 1.4vw, 0.9rem); /* Увеличен минимальный размер вместо 0.9rem */
         padding: 0 5px;
+        line-height: 1.6; /* Улучшена читаемость */
     }
 
     .page7-left-side-feature-item {
         margin-left: 15px;
-        font-size: 0.9rem;
+        font-size: clamp(0.875rem, 1.4vw, 0.9rem); /* Увеличен минимальный размер вместо 0.9rem */
+        line-height: 1.6; /* Улучшена читаемость */
     }
 
     .page7-right-side-logo {
@@ -359,23 +439,30 @@
     }
 
     .page7-drone-title {
-        font-size: 1.6rem;
+        font-size: clamp(1.25rem, 2.5vw, 1.6rem); /* Адаптивный размер вместо 1.6rem */
+        line-height: 1.4; /* Улучшена читаемость */
     }
 
     .page7-drone-subtitle {
-        font-size: 1.2rem;
+        font-size: clamp(0.9375rem, 1.8vw, 1.2rem); /* Адаптивный размер вместо 1.2rem */
+        line-height: 1.5; /* Улучшена читаемость */
     }
 
     .page7-drone-description {
-        font-size: 1rem;
+        font-size: clamp(0.875rem, 1.4vw, 1rem); /* Адаптивный размер вместо 1rem */
+        line-height: 1.6; /* Улучшена читаемость */
+    }
+
+    .page7-left-side-drone {
+        font-size: clamp(2rem, 4vw, 3rem); /* Адаптивный размер вместо 2.5rem */
     }
 
     @media (max-width: 375px) {
         .page7-skyline-container {
-            font-size: 1rem;
+            font-size: clamp(0.875rem, 1.4vw, 1rem); /* Увеличен минимальный размер вместо 1rem */
             height: auto;
-            flex-direction: column;
             padding: 0;
+            flex-direction: column;
         }
 
         .page7-skyline-content {
@@ -392,13 +479,15 @@
         }
 
         .page7-left-side-header {
-            font-size: 0.85rem;
+            font-size: clamp(0.8125rem, 1.3vw, 0.85rem); /* Увеличен минимальный размер вместо 0.85rem */
             margin: 5px 0;
+            line-height: 1.5; /* Улучшена читаемость */
         }
 
         .page7-left-side-drone {
-            font-size: 2.5rem;
+            font-size: clamp(1.75rem, 3.5vw, 2.5rem); /* Увеличен минимальный размер вместо 2.5rem */
             margin-bottom: 10px;
+            line-height: 1.3; /* Улучшена читаемость */
         }
 
         .page7-left-side-img {
@@ -409,13 +498,15 @@
         }
 
         .page7-left-side-features-list {
-            font-size: 0.85rem;
+            font-size: clamp(0.8125rem, 1.3vw, 0.85rem); /* Увеличен минимальный размер вместо 0.85rem */
             padding: 0 5px;
+            line-height: 1.6; /* Улучшена читаемость */
         }
 
         .page7-left-side-feature-item {
-            font-size: 0.85rem;
+            font-size: clamp(0.8125rem, 1.3vw, 0.85rem); /* Увеличен минимальный размер вместо 0.85rem */
             margin-left: 10px;
+            line-height: 1.6; /* Улучшена читаемость */
         }
 
         .page7-right-side {
@@ -438,15 +529,18 @@
         }
 
         .page7-drone-title {
-            font-size: 1.4rem;
+            font-size: clamp(1.125rem, 2.2vw, 1.4rem); /* Адаптивный размер вместо 1.4rem */
+            line-height: 1.4; /* Улучшена читаемость */
         }
 
         .page7-drone-subtitle {
-            font-size: 1.1rem;
+            font-size: clamp(0.875rem, 1.6vw, 1.1rem); /* Адаптивный размер вместо 1.1rem */
+            line-height: 1.5; /* Улучшена читаемость */
         }
 
         .page7-drone-description {
-            font-size: 0.95rem;
+            font-size: clamp(0.8125rem, 1.3vw, 0.95rem); /* Адаптивный размер вместо 0.95rem */
+            line-height: 1.6; /* Улучшена читаемость */
         }
 
         .page7-madeinua-icon {

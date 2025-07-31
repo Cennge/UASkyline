@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.2rem */
     position: relative;
 }
 
@@ -33,14 +33,18 @@
 }
 
 .page10-left-side-subtext {
-    font-size: 2.1rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem); /* Адаптивный размер вместо 2.1rem */
     margin-left: 60px;
     margin-bottom: 10px;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page10-table-container {
     padding-left: 60px;
     width: 50%;
+    max-width: 100%; /* Предотвращение переполнения */
+    box-sizing: border-box;
 }
 
 .page10-skyline-content {
@@ -49,26 +53,32 @@
     height: 100%;
     padding: 40px;
     box-sizing: border-box;
+    max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page10-left-side-drone {
-    font-size: 4.8rem;
+    font-size: clamp(3rem, 5vw, 4.8rem); /* Адаптивный размер вместо 4.8rem */
     margin-left: 60px;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
     margin-bottom: 60px;
+    line-height: 1.2; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page10-table {
-    min-width: 60%;
+    width: 100%; /* Полная ширина вместо min-width: 60% */
+    max-width: 100%; /* Ограничение ширины */
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #e5e7eb;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1rem); /* Адаптивный размер вместо 1rem */
+    table-layout: auto; /* Автоматическое масштабирование колонок */
 }
 
 .page10-td {
     padding: 0.2rem 0.5rem;
     border-bottom: 1px solid #e5e7eb;
+    word-break: break-word; /* Перенос длинных слов */
 }
 
 .page10-td-first {
@@ -83,9 +93,10 @@
 .page10-left-side-table-footer {
     padding-top: 10px;
     padding-left: 60px;
-    font-size: 0.95rem;
+    font-size: clamp(0.8125rem, 1.6vw, 0.95rem); /* Адаптивный размер вместо 0.95rem */
+    line-height: 1.5; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
-
 
 .page10-madeinua-icon {
     position: absolute;
@@ -102,7 +113,6 @@
     width: 250px;
     z-index: 10;
 }
-
 
 .page10-middle-side-img {
     width: 1200px;
@@ -124,7 +134,7 @@
     position: relative;
     background-color: #1a1a1a;
     color: #ff6200;
-    font-size: 24px;
+    font-size: clamp(1rem, 2.2vw, 1.5rem); /* Адаптивный размер вместо 24px */
     font-weight: bold;
     padding: 10px 20px;
     display: inline-block;
@@ -133,6 +143,8 @@
     text-transform: uppercase;
     scale: 1.4;
     margin-right: 180px;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page10-main-text {
@@ -140,7 +152,8 @@
     display: flex;
     flex-direction: row;
     align-items: end;
-    white-space: nowrap
+    white-space: nowrap;
+    overflow-wrap: break-word; /* Перенос длинных слов, чтобы избежать переполнения */
 }
 
 @media (max-width: 1440px) {
@@ -175,12 +188,11 @@
     }
 
     .page10-left-side-subtext {
-        font-size: 1.8rem;
+        font-size: clamp(1.25rem, 2.5vw, 1.8rem); /* Адаптивный размер вместо 1.8rem */
     }
 
     .page10-left-side-drone {
-        font-size: 3.6rem;
-        margin-bottom: 30px;
+        font-size: clamp(2.5rem, 4.5vw, 3.6rem); /* Адаптивный размер вместо 3.6rem */
     }
 
     .page10-middle-side-img {
@@ -210,6 +222,9 @@
         margin: 20px auto 0;
     }
 
+    .page10-left-side-table-footer {
+        font-size: clamp(0.75rem, 1.4vw, 0.875rem);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -217,6 +232,25 @@
         display: none;
     }
 
+    .page10-left-side-subtext {
+        font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+    }
+
+    .page10-left-side-drone {
+        font-size: clamp(2.25rem, 4vw, 3.375rem);
+    }
+
+    .page10-table {
+        font-size: clamp(0.875rem, 1.6vw, 1rem);
+    }
+
+    .page10-left-side-table-footer {
+        font-size: clamp(0.8125rem, 1.6vw, 0.9375rem);
+    }
+
+    .page10-banner {
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+    }
 }
 
 @media (max-width: 768px) {
@@ -225,27 +259,30 @@
     }
 
     .page10-left-side-drone {
-        font-size: 2.6rem;
+        font-size: clamp(1.75rem, 3.5vw, 2.6rem); /* Адаптивный размер вместо 2.6rem */
     }
 
     .page10-left-side-subtext {
-        font-size: 1.4rem;
+        font-size: clamp(1rem, 2vw, 1.4rem); /* Адаптивный размер вместо 1.4rem */
     }
 
     .page10-table {
-        font-size: 0.9rem;
+        font-size: clamp(0.8125rem, 1.6vw, 0.9rem); /* Адаптивный размер вместо 0.9rem */
     }
 
     .page10-banner {
-        font-size: 30px;
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem); /* Адаптивный размер вместо 30px */
         padding: 8px 16px;
     }
 
     .page10-main-text {
-        font-size: 2rem;
+        font-size: clamp(1.25rem, 2.5vw, 2rem); /* Адаптивный размер вместо 2rem */
+    }
+
+    .page10-left-side-table-footer {
+        font-size: clamp(0.75rem, 1.4vw, 0.875rem);
     }
 }
-
 
 @media (max-width: 425px) {
     .page10-middle-side-img {
@@ -257,19 +294,55 @@
         scale: 1.3;
     }
 
+    .page10-left-side-subtext {
+        font-size: clamp(0.9375rem, 1.8vw, 1.25rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page10-left-side-drone {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Увеличен минимальный размер */
+        line-height: 1.3;
+    }
+
+    .page10-table {
+        font-size: clamp(0.75rem, 1.4vw, 0.875rem); /* Увеличен минимальный размер */
+        line-height: 1.5;
+    }
+
+    .page10-td {
+        padding: 0.4rem 0.5rem; /* Уменьшены отступы для маленьких экранов */
+        word-break: break-word;
+    }
+
+    .page10-left-side-table-footer {
+        font-size: clamp(0.6875rem, 1.3vw, 0.8125rem); /* Увеличен минимальный размер */
+        line-height: 1.5;
+    }
+
+    .page10-banner {
+        font-size: clamp(0.75rem, 1.4vw, 0.9375rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page10-main-text {
+        font-size: clamp(1rem, 2vw, 1.5rem); /* Адаптивный размер */
+    }
+
     @media (max-width: 375px) {
         .page10-skyline-content {
             padding: 20px;
         }
 
         .page10-left-side-drone {
-            font-size: 2rem;
+            font-size: clamp(1.25rem, 2.5vw, 2rem); /* Увеличен минимальный размер вместо 2rem */
             margin-bottom: 20px;
+            line-height: 1.3;
         }
 
         .page10-left-side-subtext {
-            font-size: 1.2rem;
+            font-size: clamp(0.875rem, 1.6vw, 1.2rem); /* Увеличен минимальный размер вместо 1.2rem */
             margin-bottom: 8px;
+            line-height: 1.4;
         }
 
         .page10-table-container {
@@ -278,12 +351,16 @@
         }
 
         .page10-table {
-            font-size: 0.8rem;
+            font-size: clamp(0.6875rem, 1.3vw, 0.8rem); /* Увеличен минимальный размер вместо 0.8rem */
+        }
+
+        .page10-td {
+            padding: 0.3rem 0.4rem; /* Еще меньшие отступы для компактности */
+            word-break: break-word;
         }
 
         .page10-left-side-table-footer {
-            font-size: 0.8rem;
-            padding-left: 0;
+            font-size: clamp(0.6875rem, 1.2vw, 0.8rem); /* Увеличен минимальный размер вместо 0.8rem */
             text-align: center;
         }
 
@@ -306,14 +383,15 @@
         }
 
         .page10-banner {
-            font-size: 20px;
+            font-size: clamp(0.6875rem, 1.3vw, 0.8125rem); /* Увеличен минимальный размер */
             padding: 6px 12px;
             margin: 0 auto;
             scale: 1;
+            line-height: 1.4;
         }
 
         .page10-main-text {
-            font-size: 1.4rem;
+            font-size: clamp(0.875rem, 1.8vw, 1.25rem); /* Адаптивный размер вместо 1.4rem */
             flex-direction: column;
             align-items: center;
             text-align: center;

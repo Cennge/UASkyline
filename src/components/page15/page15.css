@@ -1,12 +1,12 @@
 .page15-skyline-container {
   font-family: "Montserrat", sans-serif;
   font-weight: 650;
-  height: 100vh;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: clamp(0.875rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.2rem */
   position: relative;
 }
 
@@ -29,6 +29,7 @@
   padding: 40px;
   box-sizing: border-box;
   z-index: 5;
+  max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page15-left-side {
@@ -41,41 +42,52 @@
 }
 
 .page15-left-side-drone {
-  font-size: 4.8rem;
+  font-size: clamp(3rem, 5vw, 4.8rem); /* Адаптивный размер вместо 4.8rem */
   margin-left: 60px;
   font-family: "USSRStencil", sans-serif;
   font-weight: 200;
+  line-height: 1.2; /* Улучшена читаемость */
+  overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page15-left-side-subtext {
-  font-size: 1.2rem;
+  font-size: clamp(0.875rem, 1.8vw, 1.2rem); /* Адаптивный размер вместо 1.2rem */
   margin-left: 60px;
   margin-bottom: 10px;
   line-height: 1.4;
+  overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page15-table-container {
   padding-left: 60px;
+  max-width: 100%; /* Предотвращение переполнения */
+  box-sizing: border-box;
 }
 
 .page15-table {
-  min-width: 60%;
+  width: 100%; /* Полная ширина вместо min-width: 60% */
+  max-width: 100%; /* Ограничение ширины */
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #e5e7eb;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 1.8vw, 1rem); /* Адаптивный размер вместо 1rem */
+  table-layout: auto; /* Автоматическое масштабирование колонок */
 }
 
 .page15-table-bottom {
-  min-width: 60%;
+  width: 100%; /* Полная ширина вместо min-width: 60% */
+  max-width: 100%; /* Ограничение ширины */
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid #e5e7eb;
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 1.4vw, 0.8rem); /* Адаптивный размер вместо 0.8rem */
   margin-top: 15px;
+  margin-bottom: 150px;
+  table-layout: auto; /* Автоматическое масштабирование колонок */
 }
 
 .page15-td {
   padding: 0.4rem 0.5rem;
   border-bottom: 1px solid #e5e7eb;
+  word-break: break-word; /* Перенос длинных слов */
 }
 
 .page15-tr:hover {
@@ -94,7 +106,9 @@
 .page15-left-side-table-footer {
   padding-top: 10px;
   padding-left: 60px;
-  font-size: 0.95rem;
+  font-size: clamp(0.8125rem, 1.6vw, 0.95rem); /* Адаптивный размер вместо 0.95rem */
+  line-height: 1.5; /* Улучшена читаемость */
+  overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page15-right-side {
@@ -112,7 +126,7 @@
   position: relative;
   background-color: #1a1a1a;
   color: #ff6200;
-  font-size: 24px;
+  font-size: clamp(1rem, 2.2vw, 1.5rem); /* Адаптивный размер вместо 24px */
   font-weight: bold;
   padding: 10px 20px;
   display: inline-block;
@@ -120,6 +134,8 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
   text-transform: uppercase;
   scale: 1.2;
+  line-height: 1.3; /* Улучшена читаемость */
+  overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page15-sticker {
@@ -131,7 +147,7 @@
   background: #ff6200;
   color: #fff;
   font-weight: bold;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem); /* Адаптивный размер вместо 14px */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -168,19 +184,27 @@
   z-index: 10;
 }
 
-@media (max-width: 1440px) {
+
+@media (max-width: 1650px) {
   .page15-right-side-img {
-    width: 700px;
+    width: 550px;
     bottom: 240px;
   }
+}
 
+@media (max-width: 1440px) {
   .page15-left-side-drone {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 4.5vw, 4rem); /* Адаптивный размер вместо 4rem */
     margin-left: 50px;
   }
 
-  .page15-left-side-subtext,
+  .page15-left-side-subtext {
+    font-size: clamp(0.8125rem, 1.6vw, 1rem); /* Адаптивный размер */
+    margin-left: 50px;
+  }
+
   .page15-left-side-table-footer {
+    font-size: clamp(0.75rem, 1.4vw, 0.875rem); /* Адаптивный размер */
     margin-left: 50px;
   }
 
@@ -193,11 +217,24 @@
     right: 60px;
     bottom: 50px;
   }
+
+  .page15-table {
+    font-size: clamp(0.8125rem, 1.6vw, 0.9375rem);
+  }
+
+  .page15-table-bottom {
+    font-size: clamp(0.625rem, 1.2vw, 0.75rem);
+  }
+
+  .page15-banner {
+    font-size: clamp(0.9375rem, 2vw, 1.375rem);
+  }
 }
 
 @media (max-width: 1024px) {
   .page15-skyline-container {
     height: auto;
+    font-size: clamp(0.8125rem, 1.8vw, 1rem);
   }
 
   .page15-skyline-content {
@@ -232,13 +269,13 @@
   .page15-table,
   .page15-table-bottom {
     width: 90%;
+    max-width: 100%; /* Ограничение ширины */
   }
 
   .page15-right-side-img {
     position: static;
     width: 520px;
     margin: 20px auto 0 auto;
-
   }
 
   .page15-bottom-image {
@@ -249,19 +286,42 @@
     display: none;
   }
 
+  .page15-left-side-drone {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .page15-left-side-subtext {
+    font-size: clamp(0.75rem, 1.4vw, 0.9375rem);
+  }
+
+  .page15-table {
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+  }
+
+  .page15-table-bottom {
+    font-size: clamp(0.7rem, 1.3vw, 0.8125rem);
+  }
+
+  .page15-left-side-table-footer {
+    font-size: clamp(0.75rem, 1.4vw, 0.875rem);
+  }
+
+  .page15-banner {
+    font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+  }
 }
 
 @media (max-width: 768px) {
   .page15-left-side-drone {
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 3.5vw, 3rem); /* Адаптивный размер вместо 3rem */
   }
 
   .page15-left-side-subtext {
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 1.3vw, 0.875rem); /* Адаптивный размер вместо 1rem */
   }
 
   .page15-banner {
-    font-size: 20px;
+    font-size: clamp(0.8125rem, 1.6vw, 1.125rem); /* Адаптивный размер вместо 20px */
     padding: 8px 16px;
   }
 
@@ -272,14 +332,17 @@
   .page15-sticker {
     width: 50px;
     height: 50px;
-    font-size: 12px;
+    font-size: clamp(0.6875rem, 1.4vw, 0.8125rem); /* Адаптивный размер вместо 12px */
     top: -30px;
     right: -40px;
   }
 
-  .page15-table,
+  .page15-table {
+    font-size: clamp(0.8125rem, 1.4vw, 0.9rem); /* Адаптивный размер вместо 0.9rem */
+  }
+
   .page15-table-bottom {
-    font-size: 0.9rem;
+    font-size: clamp(0.625rem, 1.2vw, 0.75rem); /* Адаптивный размер вместо 0.75rem */
   }
 
   .page15-right-side-img {
@@ -297,15 +360,15 @@
 
 @media (max-width: 425px) {
   .page15-skyline-container {
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 1.4vw, 1rem); /* Адаптивный размер вместо 1rem */
   }
 
   .page15-left-side-drone {
-    font-size: 2.4rem;
+    font-size: clamp(1.5rem, 3vw, 2.4rem); /* Адаптивный размер вместо 2.4rem */
   }
 
   .page15-left-side-subtext {
-    font-size: 0.9rem;
+    font-size: clamp(0.625rem, 1.2vw, 0.9rem); /* Адаптивный размер вместо 0.9rem */
   }
 
   .page15-skyline-background {
@@ -313,7 +376,7 @@
   }
 
   .page15-banner {
-    font-size: 16px;
+    font-size: clamp(0.75rem, 1.4vw, 1rem); /* Адаптивный размер вместо 16px */
     padding: 6px 12px;
     scale: 1;
   }
@@ -321,14 +384,18 @@
   .page15-sticker {
     width: 40px;
     height: 40px;
-    font-size: 10px;
+    font-size: clamp(0.625rem, 1.2vw, 0.75rem); /* Адаптивный размер вместо 10px */
     top: -25px;
     right: -30px;
   }
 
-  .page15-table,
+  .page15-table {
+    font-size: clamp(0.7rem, 1.3vw, 0.875rem); /* Адаптивный размер вместо 0.75rem */
+    width: 100%;
+  }
+
   .page15-table-bottom {
-    font-size: 0.75rem;
+    font-size: clamp(0.625rem, 1.1vw, 0.7rem); /* Адаптивный размер вместо 0.7rem */
     width: 100%;
   }
 
@@ -344,10 +411,21 @@
     display: none;
   }
 
+  .page15-table-container {
+    scale: 0.8;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .page15-right-side-img {
+    scale: 1.2;
+  }
+
   @media (max-width: 375px) {
     .page15-skyline-container {
       padding: 16px 10px;
       height: auto;
+      font-size: clamp(0.7rem, 1.3vw, 0.875rem); /* Адаптивный размер */
     }
 
     .page15-skyline-content {
@@ -365,12 +443,13 @@
     }
 
     .page15-left-side-drone {
-      font-size: 2rem;
+      font-size: clamp(1.25rem, 2.5vw, 2rem); /* Адаптивный размер вместо 2rem */
       margin: 0 0 12px 0;
+      line-height: 1.3;
     }
 
     .page15-left-side-subtext {
-      font-size: 0.85rem;
+      font-size: clamp(0.625rem, 1.2vw, 0.85rem); /* Адаптивный размер вместо 0.85rem */
       margin: 0 0 12px 0;
       line-height: 1.3;
     }
@@ -383,28 +462,32 @@
 
     .page15-table,
     .page15-table-bottom {
-      font-size: 0.7rem;
+      font-size: clamp(0.625rem, 1.2vw, 0.7rem); /* Адаптивный размер вместо 0.7rem */
       width: 100%;
+      line-height: 1.5;
     }
 
     .page15-td {
-      padding: 0.3rem 0.4rem;
+      padding: 0.3rem 0.4rem; /* Уменьшены отступы для компактности */
+      word-break: break-word;
     }
 
     .page15-banner {
-      font-size: 14px;
+      font-size: clamp(0.7rem, 1.3vw, 0.875rem); /* Адаптивный размер вместо 14px */
       padding: 6px 10px;
       width: 100%;
       text-align: center;
       scale: 1;
+      line-height: 1.4;
     }
 
     .page15-sticker {
       width: 36px;
       height: 36px;
-      font-size: 9px;
+      font-size: clamp(0.5625rem, 1.1vw, 0.6875rem); /* Адаптивный размер вместо 9px */
       top: -20px;
       right: -20px;
+      line-height: 1.2;
     }
 
     .page15-right-side-img {
@@ -414,9 +497,10 @@
     }
 
     .page15-left-side-table-footer {
-      font-size: 0.8rem;
+      font-size: clamp(0.6875rem, 1.2vw, 0.8rem); /* Адаптивный размер вместо 0.8rem */
       padding: 8px 0;
       margin: 0;
+      line-height: 1.5;
     }
   }
 }

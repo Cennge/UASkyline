@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.2rem */
     position: relative;
     margin-bottom: 20px;
 }
@@ -33,9 +33,11 @@
 }
 
 .page11-left-side-subtext {
-    font-size: 1.7rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.7rem); /* Адаптивный размер вместо 1.7rem */
     margin-left: 60px;
     margin-bottom: 10px;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page11-skyline-content {
@@ -46,20 +48,24 @@
     box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page11-left-side-drone {
-    font-size: 4.8rem;
+    font-size: clamp(3rem, 5vw, 4.8rem); /* Адаптивный размер вместо 4.8rem */
     margin-left: 60px;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
+    line-height: 1.2; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page11-block-drone {
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 3.5vw, 3.2rem); /* Адаптивный размер вместо 3.2rem */
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
-
+    line-height: 1.2; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page11-left-side {
@@ -102,7 +108,7 @@
     position: relative;
     background-color: #1a1a1a;
     color: #ff6200;
-    font-size: 24px;
+    font-size: clamp(1rem, 2.2vw, 1.5rem); /* Адаптивный размер вместо 24px */
     font-weight: bold;
     padding: 10px 20px;
     display: inline-block;
@@ -110,6 +116,8 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
     text-transform: uppercase;
     scale: 1.2;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page11-right-side-img {
@@ -133,7 +141,7 @@
     background: #ff6200;
     color: #fff;
     font-weight: bold;
-    font-size: 14px;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem); /* Адаптивный размер вместо 14px */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -148,10 +156,13 @@
 }
 
 .page11-right-side-banner-description {
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1rem); /* Адаптивный размер вместо 1rem */
     margin-top: 20px;
     text-align: start;
     color: #000000;
+    line-height: 1.5; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
+    max-width: 90%; /* Ограничение ширины текста */
 }
 
 @media (max-width: 1440px) {
@@ -163,11 +174,32 @@
         right: -20px;
         z-index: 10;
     }
+
+    .page11-left-side-subtext {
+        font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+    }
+
+    .page11-left-side-drone {
+        font-size: clamp(2.5rem, 4.5vw, 4rem);
+    }
+
+    .page11-block-drone {
+        font-size: clamp(1.75rem, 3vw, 2.5rem);
+    }
+
+    .page11-banner {
+        font-size: clamp(0.9375rem, 2vw, 1.375rem);
+    }
+
+    .page11-right-side-banner-description {
+        font-size: clamp(0.8125rem, 1.6vw, 0.9375rem);
+    }
 }
 
 @media (max-width: 1024px) {
     .page11-skyline-container {
         height: auto;
+        font-size: clamp(0.8125rem, 1.8vw, 1rem);
     }
 
     .page11-skyline-background {
@@ -195,7 +227,7 @@
 
     .page11-banner {
         width: 90%;
-        font-size: 20px;
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem); /* Адаптивный размер вместо 20px */
         padding: 10px 10px;
         text-align: center;
     }
@@ -204,6 +236,7 @@
         top: -28px;
         right: -28px;
         scale: 1;
+        font-size: clamp(0.6875rem, 1.4vw, 0.8125rem);
     }
 
     .page11-right-side-img {
@@ -223,11 +256,52 @@
         right: -60px;
         top: -40px;
     }
+
+    .page11-left-side-subtext {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .page11-left-side-drone {
+        font-size: clamp(2.25rem, 4vw, 3.5rem);
+    }
+
+    .page11-block-drone {
+        font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+    }
+
+    .page11-right-side-banner-description {
+        font-size: clamp(0.875rem, 1.6vw, 0.9375rem);
+    }
 }
 
 @media (max-width: 425px) {
     .page11-right-side-img {
         scale: 1.2;
+    }
+
+    .page11-left-side-subtext {
+        font-size: clamp(0.9375rem, 1.8vw, 1.25rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page11-left-side-drone {
+        font-size: clamp(1.5rem, 3vw, 2rem); /* Увеличен минимальный размер */
+        line-height: 1.3;
+    }
+
+    .page11-block-drone {
+        font-size: clamp(1.25rem, 2.5vw, 1.75rem); /* Увеличен минимальный размер */
+        line-height: 1.3;
+    }
+
+    .page11-banner {
+        font-size: clamp(0.875rem, 1.4vw, 1rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page11-right-side-banner-description {
+        font-size: clamp(0.8125rem, 1.3vw, 0.875rem); /* Увеличен минимальный размер */
+        line-height: 1.5;
     }
 
     @media (max-width: 375px) {
@@ -249,41 +323,47 @@
         }
 
         .page11-left-side-subtext {
-            font-size: 1.2rem;
+            font-size: clamp(0.875rem, 1.6vw, 1.2rem); /* Увеличен минимальный размер вместо 1.2rem */
             margin-left: 0;
             text-align: center;
+            line-height: 1.4;
         }
 
         .page11-left-side-drone {
-            font-size: 2rem;
+            font-size: clamp(1.25rem, 2.5vw, 2rem); /* Увеличен минимальный размер вместо 2rem */
             margin-left: 0;
             text-align: center;
+            line-height: 1.3;
         }
 
         .page11-block-drone {
-            font-size: 2.2rem;
+            font-size: clamp(1.125rem, 2.2vw, 1.5rem); /* Увеличен минимальный размер вместо 2.2rem */
             text-align: center;
+            line-height: 1.3;
         }
 
         .page11-banner {
-            font-size: 18px;
+            font-size: clamp(0.8125rem, 1.3vw, 0.9375rem); /* Увеличен минимальный размер вместо 18px */
             padding: 8px 12px;
             width: 100%;
             scale: 1;
+            line-height: 1.4;
         }
 
         .page11-right-side-banner-description {
-            font-size: 0.85rem;
+            font-size: clamp(0.75rem, 1.2vw, 0.8125rem); /* Увеличен минимальный размер вместо 0.85rem */
             text-align: center;
+            line-height: 1.5;
         }
 
         .page11-sticker {
             scale: 1;
             top: -25px;
             right: -20px;
-            font-size: 12px;
+            font-size: clamp(0.625rem, 1.2vw, 0.75rem); /* Увеличен минимальный размер вместо 12px */
             width: 50px;
             height: 50px;
+            line-height: 1.2;
         }
 
         .page11-middle-side-img {

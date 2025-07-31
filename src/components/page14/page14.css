@@ -1,12 +1,12 @@
 .page14-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 2vw, 1.25rem); /* Адаптивный размер вместо 1.2rem */
     position: relative;
 }
 
@@ -23,13 +23,17 @@
 }
 
 .page14-left-side-subtext {
-    font-size: 2.1rem;
+    font-size: clamp(1.5rem, 3vw, 2.1rem); /* Адаптивный размер вместо 2.1rem */
     margin-left: 60px;
     margin-bottom: 10px;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-table-container {
     padding-left: 60px;
+    max-width: 100%; /* Предотвращение переполнения */
+    box-sizing: border-box;
 }
 
 .page14-skyline-content {
@@ -38,26 +42,32 @@
     height: 100%;
     padding: 40px;
     box-sizing: border-box;
+    max-width: 100%; /* Предотвращение переполнения */
 }
 
 .page14-left-side-drone {
-    font-size: 4.8rem;
+    font-size: clamp(3rem, 5vw, 4.8rem); /* Адаптивный размер вместо 4.8rem */
     margin-left: 60px;
     font-family: "USSRStencil", sans-serif;
     font-weight: 200;
     margin-bottom: 60px;
+    line-height: 1.2; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-table {
-    min-width: 60%;
+    width: 100%; /* Полная ширина вместо min-width: 60% */
+    max-width: 100%; /* Ограничение ширины */
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #e5e7eb;
-    font-size: 1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1rem); /* Адаптивный размер вместо 1rem */
+    table-layout: auto; /* Автоматическое масштабирование колонок */
 }
 
 .page14-td {
     padding: 0.2rem 0.5rem;
     border-bottom: 1px solid #e5e7eb;
+    word-break: break-word; /* Перенос длинных слов */
 }
 
 .page14-td-first {
@@ -72,7 +82,9 @@
 .page14-left-side-table-footer {
     padding-top: 10px;
     padding-left: 60px;
-    font-size: 0.95rem;
+    font-size: clamp(0.8125rem, 1.6vw, 0.95rem); /* Адаптивный размер вместо 0.95rem */
+    line-height: 1.5; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-left-side {
@@ -86,19 +98,21 @@
 
 .page14-footer-title {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Адаптивный размер вместо 1.5rem */
     margin-bottom: 6px;
     color: #1a1a1a;
     margin-top: 20px;
-
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-footer-text {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 1.8vw, 1.2rem); /* Адаптивный размер вместо 1.2rem */
     color: #333;
     line-height: 1.4;
     padding-bottom: 50px;
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-madeinua-icon {
@@ -132,7 +146,7 @@
     position: relative;
     background-color: #1a1a1a;
     color: #ff6200;
-    font-size: 24px;
+    font-size: clamp(1rem, 2.2vw, 1.5rem); /* Адаптивный размер вместо 24px */
     font-weight: bold;
     padding: 10px 20px;
     display: inline-block;
@@ -140,6 +154,8 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 90% 100%, 0 100%);
     text-transform: uppercase;
     scale: 1.2;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-right-side-img {
@@ -158,31 +174,36 @@
 
 .page14-footer-title {
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: clamp(0.875rem, 1.8vw, 1.1rem); /* Адаптивный размер вместо 1.1rem */
     margin-bottom: 6px;
     color: #1a1a1a;
+    line-height: 1.3; /* Улучшена читаемость */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .page14-footer-text {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(0.8125rem, 1.6vw, 1rem); /* Адаптивный размер вместо 1rem */
     color: #333;
     line-height: 1.4;
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .price-block {
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Адаптивный размер вместо 1.4rem */
     font-weight: 600;
     color: #1a1a1a;
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .price-label {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 1.4rem); /* Адаптивный размер вместо 1.4rem */
     color: #1a1a1a;
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
 
 .price-tag {
@@ -191,16 +212,16 @@
     padding: 6px 14px;
     clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: clamp(0.9375rem, 1.8vw, 1.3rem); /* Адаптивный размер вместо 1.3rem */
     display: inline-block;
     white-space: nowrap;
 }
 
 .price-currency {
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: clamp(0.75rem, 1.4vw, 0.9rem); /* Адаптивный размер вместо 0.9rem */
+    overflow-wrap: break-word; /* Перенос длинных слов */
 }
-
 
 @media (max-width: 1440px) {
     .page14-left-side {
@@ -213,11 +234,56 @@
     .page14-right-side-img {
         width: 350px;
     }
+
+    .page14-left-side-subtext {
+        font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+    }
+
+    .page14-left-side-drone {
+        font-size: clamp(2.5rem, 4.5vw, 4rem);
+    }
+
+    .page14-table {
+        font-size: clamp(0.8125rem, 1.6vw, 0.9375rem);
+    }
+
+    .page14-left-side-table-footer {
+        font-size: clamp(0.75rem, 1.4vw, 0.875rem);
+    }
+
+    .page14-banner {
+        font-size: clamp(0.9375rem, 2vw, 1.375rem);
+    }
+
+    .page14-footer-title {
+        font-size: clamp(0.8125rem, 1.6vw, 1rem);
+    }
+
+    .page14-footer-text {
+        font-size: clamp(0.75rem, 1.4vw, 0.9375rem);
+    }
+
+    .price-block {
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+    }
+
+    .price-label {
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+    }
+
+    .price-tag {
+        font-size: clamp(0.875rem, 1.6vw, 1.125rem);
+    }
+
+    .price-currency {
+        font-size: clamp(0.6875rem, 1.3vw, 0.8125rem);
+    }
 }
 
 @media (max-width: 1024px) {
     .page14-skyline-container {
         height: auto;
+        font-size: clamp(0.8125rem, 1.8vw, 1rem);
     }
 
     .page14-skyline-background {
@@ -249,17 +315,18 @@
 
     .page14-table {
         width: 100%;
-        font-size: 1.5rem;
+        max-width: 100%; /* Ограничение ширины */
+        font-size: clamp(0.9375rem, 1.8vw, 1.25rem); /* Увеличен минимальный размер вместо 1.5rem */
     }
 
     .page14-td {
-        padding: 0.8rem 1rem;
-        border-bottom: 1px solid #e5e7eb;
+        padding: 0.6rem 0.8rem; /* Уменьшены отступы для компактности */
+        word-break: break-word;
     }
 
     .page14-banner {
         width: 90%;
-        font-size: 20px;
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem); /* Адаптивный размер вместо 20px */
         padding: 10px 10px;
         text-align: center;
     }
@@ -275,14 +342,106 @@
     .page14-madeinua-icon {
         display: none;
     }
+
+    .page14-left-side-subtext {
+        font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+    }
+
+    .page14-left-side-drone {
+        font-size: clamp(2.25rem, 4vw, 3.5rem);
+    }
+
+    .page14-left-side-table-footer {
+        font-size: clamp(0.8125rem, 1.6vw, 0.875rem);
+    }
+
+    .page14-footer-title {
+        font-size: clamp(0.75rem, 1.4vw, 0.9375rem);
+    }
+
+    .page14-footer-text {
+        font-size: clamp(0.6875rem, 1.3vw, 0.875rem);
+    }
+
+    .price-block {
+        font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
+    }
+
+    .price-label {
+        font-size: clamp(0.8125rem, 1.6vw, 1.125rem);
+    }
+
+    .price-tag {
+        font-size: clamp(0.75rem, 1.4vw, 1rem);
+    }
+
+    .price-currency {
+        font-size: clamp(0.625rem, 1.2vw, 0.75rem);
+    }
 }
 
 @media (max-width: 425px) {
     .page14-table-container {
         scale: 0.8;
+        width: 100%;
+        overflow-x: auto;
     }
 
     .page14-right-side-img {
         scale: 1.2;
+    }
+
+    .page14-left-side-subtext {
+        font-size: clamp(0.9375rem, 1.8vw, 1.25rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page14-left-side-drone {
+        font-size: clamp(1.75rem, 3.5vw, 2.5rem); /* Увеличен минимальный размер */
+        line-height: 1.3;
+    }
+
+    .page14-table {
+        font-size: clamp(0.875rem, 1.4vw, 1rem); /* Увеличен минимальный размер */
+        line-height: 1.5;
+    }
+
+    .page14-td {
+        padding: 0.4rem 0.5rem; /* Уменьшены отступы для маленьких экранов */
+        word-break: break-word;
+    }
+
+    .page14-left-side-table-footer {
+        font-size: clamp(0.8125rem, 1.3vw, 0.875rem); /* Увеличен минимальный размер */
+        line-height: 1.5;
+    }
+
+    .page14-banner {
+        font-size: clamp(0.875rem, 1.4vw, 1rem); /* Увеличен минимальный размер */
+        line-height: 1.4;
+    }
+
+    .page14-footer-title {
+        font-size: clamp(0.75rem, 1.3vw, 0.875rem);
+    }
+
+    .page14-footer-text {
+        font-size: clamp(0.625rem, 1.2vw, 0.8125rem);
+    }
+
+    .price-block {
+        font-size: clamp(0.75rem, 1.4vw, 1rem);
+    }
+
+    .price-label {
+        font-size: clamp(0.75rem, 1.4vw, 1rem);
+    }
+
+    .price-tag {
+        font-size: clamp(0.6875rem, 1.3vw, 0.875rem);
+    }
+
+    .price-currency {
+        font-size: clamp(0.625rem, 1.1vw, 0.7rem);
     }
 }

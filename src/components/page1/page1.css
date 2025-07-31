@@ -1,12 +1,12 @@
 .page1-skyline-container {
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
 }
 
 .page1-skyline-content {
@@ -15,6 +15,7 @@
     height: 100%;
     padding: 80px;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 .page1-drone-image {
@@ -56,6 +57,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 10;
+    max-width: 100%;
 }
 
 .page1-skyline-logo img {
@@ -70,12 +72,17 @@
     margin-left: 80px;
     line-height: 1.6;
     color: #333;
+    font-size: clamp(0.875rem, 1.8vw, 1.125rem);
+    overflow-wrap: break-word;
+    max-width: 90%;
 }
 
 .page1-highlight {
     font-weight: 900;
     color: #000;
     margin-top: 30px;
+    font-size: clamp(1rem, 2.2vw, 1.375rem);
+    overflow-wrap: break-word;
 }
 
 .page1-skyline-right {
@@ -127,6 +134,8 @@
 
     .page1-skyline-description p {
         margin-left: 40px;
+        font-size: clamp(0.8125rem, 1.6vw, 1rem);
+        max-width: 95%;
     }
 
     .page1-skyline-logo img {
@@ -151,10 +160,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 650;
         height: auto;
-    }
-
-    .page1-skyline-container {
-        height: auto;
+        font-size: clamp(0.8125rem, 1.8vw, 1rem);
     }
 
     .page1-verified[data-aos] {
@@ -189,6 +195,11 @@
     .page1-skyline-description p {
         margin-left: 0;
         text-align: center;
+        font-size: clamp(0.875rem, 1.6vw, 1rem);
+        /* Увеличен минимальный размер */
+        max-width: 100%;
+        line-height: 1.7;
+        /* Улучшена читаемость */
     }
 
     .page1-soldier-image {
@@ -201,6 +212,13 @@
         top: 300px;
         transform: translateX(150px);
         width: 220px;
+    }
+
+    .page1-highlight {
+        font-size: clamp(0.9375rem, 2vw, 1.125rem);
+        /* Увеличен минимальный размер */
+        line-height: 1.7;
+        /* Улучшена читаемость */
     }
 }
 
@@ -224,6 +242,21 @@
         transform: translateX(150px);
         width: 220px;
     }
+
+    .page1-skyline-description p {
+        font-size: clamp(0.9375rem, 1.5vw, 1rem);
+        /* Увеличен минимальный размер */
+        padding: 0 1rem;
+        line-height: 1.8;
+        /* Улучшена читаемость */
+    }
+
+    .page1-highlight {
+        font-size: clamp(1rem, 1.8vw, 1.125rem);
+        /* Увеличен минимальный размер */
+        line-height: 1.8;
+        /* Улучшена читаемость */
+    }
 }
 
 @media (max-width: 425px) {
@@ -234,6 +267,8 @@
     .page1-verified {
         position: relative;
         margin-left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
     }
 
     .page1-highlight[data-aos] {
@@ -242,7 +277,8 @@
     }
 
     .page1-skyline-container {
-        font-size: 1.2rem;
+        font-size: clamp(0.875rem, 1.4vw, 1rem);
+        /* Увеличен минимальный размер */
         padding: 5px;
     }
 
@@ -258,8 +294,13 @@
 
     .page1-skyline-description p {
         margin-left: 0;
-        font-size: 1.2rem;
-        padding: 0.5rem 1.5rem;
+        font-size: clamp(0.875rem, 1.4vw, 0.9375rem);
+        /* Увеличен минимальный размер */
+        padding: 0.5rem 1rem;
+        max-width: 100%;
+        text-align: center;
+        line-height: 1.8;
+        /* Улучшена читаемость */
     }
 
     .page1-soldier-image {
@@ -267,59 +308,18 @@
     }
 
     .page1-verified {
-        right: 25%;
+        right: auto;
         top: 10px;
-        transform: translateX(150px);
-        width: 220px;
+        transform: translateX(-50%);
+        width: 180px;
         display: flex;
         justify-content: center;
     }
 
-    @media (max-width: 375px) {
-        .page1-skyline-container {
-            font-size: 1rem;
-            padding: 0;
-        }
-
-        .page1-skyline-content {
-            flex-direction: column;
-            padding: 0;
-        }
-
-        .page1-skyline-logo img {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .page1-skyline-description p {
-            margin-left: 0;
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-            text-align: center;
-        }
-
-        .page1-drone-image {
-            display: none;
-        }
-
-        .page1-soldier-image {
-            display: none;
-        }
-
-        .page1-verified {
-            position: relative;
-            right: auto;
-            top: 10px;
-            transform: none;
-            width: 200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-        }
-
-        .page1-highlight {
-            font-size: 1rem;
-            text-align: center;
-        }
+    .page1-highlight {
+        font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+        /* Увеличен минимальный размер */
+        line-height: 1.8;
+        /* Улучшена читаемость */
     }
 }
