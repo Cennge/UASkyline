@@ -85,6 +85,7 @@
     font-size: clamp(0.8125rem, 1.6vw, 0.95rem); /* Адаптивный размер вместо 0.95rem */
     line-height: 1.5; /* Улучшена читаемость */
     overflow-wrap: break-word; /* Перенос длинных слов */
+    margin-bottom: 100px;
 }
 
 .page14-left-side {
