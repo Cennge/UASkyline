@@ -23,8 +23,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 
 .app-page3 {
@@ -40,8 +42,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page4 {
   position: relative;
@@ -56,8 +60,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 
 .app-page5 {
@@ -73,8 +79,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page6 {
   position: relative;
@@ -89,8 +97,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page7 {
   position: relative;
@@ -105,8 +115,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page8 {
   position: relative;
@@ -121,8 +133,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page9 {
   position: relative;
@@ -137,8 +151,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page10 {
   position: relative;
@@ -153,8 +169,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page11 {
   position: relative;
@@ -169,8 +187,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
 .app-page12 {
   position: relative;
@@ -181,12 +201,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/6ф.jpg');
+  background-image: url('./backgrounds/background12slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.1;
   z-index: -1;
   pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }
 
 .app-page13 {
@@ -198,12 +220,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/2ф.jpg');
+  background-image: url('./backgrounds/background13slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.1;
   z-index: -1;
   pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }
 
 .app-page14 {
@@ -215,12 +239,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/9ф.jpg');
+  background-image: url('./backgrounds/background14slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.1;
   z-index: -1;
   pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }
 
 .app-page15 {
@@ -232,12 +258,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('./backgrounds/5ф.jpg');
+  background-image: url('./backgrounds/background15slide.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.1;
   z-index: -1;
   pointer-events: none;
+  filter: grayscale(0.5) blur(3px);
 }
 
 .app-page16 {
@@ -253,6 +281,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* opacity: 0.1; */
   z-index: -1;
   pointer-events: none;
+  /* filter: grayscale(0.5) blur(3px); */
 }
